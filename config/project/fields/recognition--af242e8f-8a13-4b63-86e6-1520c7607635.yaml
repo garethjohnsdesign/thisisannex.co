@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 3fc14f6c-ba8d-46bd-b8fc-759a5beed7f4
+handle: recognition
+instructions: ''
+name: Recognition
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_recognition}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,33 @@
+contentColumnType: text
+fieldGroup: dfe9b0d4-736b-4fbd-a584-88932d8d56a9
+handle: address
+instructions: ''
+name: Address
+searchable: false
+settings:
+  boundary: '""'
+  boundaryRestrictionNELat: null
+  boundaryRestrictionNELng: null
+  boundaryRestrictionSWLat: null
+  boundaryRestrictionSWLng: null
+  country: GB
+  countryRestriction: null
+  height: null
+  hideAddress: ''
+  hideLatLng: null
+  hideMap: ''
+  hideSearch: ''
+  lat: 51.272154
+  lng: 0.514951
+  maxZoom: '18'
+  minZoom: '3'
+  showCurrentLocation: ''
+  showLatLng: ''
+  showW3WField: false
+  showW3WGrid: false
+  size: normal
+  typeRestriction: null
+  zoom: 15
+translationKeyFormat: null
+translationMethod: none
+type: ether\simplemap\fields\MapField

@@ -1,0 +1,38 @@
+fieldLayouts:
+  4679c781-b402-4d40-879c-185be0949c46:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: producers
+hasTitleField: true
+name: Producers
+section: 5c2fa1b4-b6c4-4857-bfb3-0a7c2ef1d908
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

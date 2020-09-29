@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: dfe9b0d4-736b-4fbd-a584-88932d8d56a9
+handle: carousel
+instructions: ''
+name: Carousel
+searchable: true
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:32174234-e8c3-40d4-9725-77ff2bd2366a'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

@@ -1,0 +1,131 @@
+field: 2d0f3f24-2560-4fff-8d6b-79339340c49a
+fieldLayouts:
+  606810e6-23c6-4b43-b867-e76a5daff5be:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4ca61764-9212-417f-bad5-00d5626ea6dc
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8de743ef-80dc-4330-baa5-889a8e13bdb4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4ca61764-9212-417f-bad5-00d5626ea6dc:
+    contentColumnType: string
+    fieldGroup: null
+    handle: project
+    instructions: ''
+    name: Project
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:32174234-e8c3-40d4-9725-77ff2bd2366a'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  8de743ef-80dc-4330-baa5-889a8e13bdb4:
+    contentColumnType: string
+    fieldGroup: null
+    handle: width
+    instructions: ''
+    name: Width
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 1/6
+            -
+              - value
+              - 'small-12 medium-2'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 1/3
+            -
+              - value
+              - 'small-12 medium-4'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 1/2
+            -
+              - value
+              - 'small-12 medium-6'
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 2/3
+            -
+              - value
+              - 'small-12 medium-8'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 5/6
+            -
+              - value
+              - 'small-12 medium-10'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 1/1
+            -
+              - value
+              - 'small-12 medium-12'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: project
+name: Project
+sortOrder: 1

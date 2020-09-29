@@ -1,0 +1,95 @@
+{% set bodyClass = 'contact' %}
+
+{% if entry.seoTitle | length %}
+{% set seoTitle = entry.seoTitle %}
+{% else %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription | length %}
+{% set seoDescription = entry.seoDescription %}
+{% endif %}
+
+{% extends "_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+
+{% block main %}
+
+<!-- Hero -->
+{% include "_includes/blocks/hero" %}    
+<!-- Hero -->
+
+{# Global Contacts #}
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 cell text-center text-uppercase">
+       <div><a href="mailto:{{site.email}}">{{site.email}}</a></div>
+       <div><a href="tel:{{site.phoneNumber}}">{{site.phoneNumber}}</a></div>
+  </div>
+</div>
+{# End Global Contacts #}
+
+{# Contacts #}
+{% for contact in entry.contacts.all()  %}
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 cell text-center padding-bottom-0">
+    <div class="dark-gray small text-uppercase sans-regular letter-spacing--loose">{{ contact.header }}</div>
+
+    {% if contact.contact|length %}
+      {% for contact in contact.contact %}
+        {% if contact.department|length %}<div class="dark-gray">{{ contact.department }}</div>{% endif %}
+        <div>{{ contact.name }}</div>
+        <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+      {% endfor %}
+    {% endif %}
+
+    </div>
+    </div>
+{% endfor %}
+{# End Contacts #}
+
+{# Socials #}
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 medium-6 cell text-center">
+    <ul class="menu simple align-center">
+     {% for block in socials.socials.all() %}
+      {% switch block.type %}
+        {% case "instagram" %}
+          <li><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-instagram"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-instagram"></use></svg></a></li>
+        {% case "twitter" %}
+          <li><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-twitter"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-twitter"></use></svg></a></li>
+        {% case "facebook" %}
+          <li><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-facebook"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-facebook"></use></svg></a></li>
+        {% case "vimeo" %}
+          <li><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-imdb"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-vimeo"></use></svg></a></li>
+      {% endswitch %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{# End Socials #}
+
+{# Copyright #}
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 medium-6 cell text-center medium-gray">
+    <small>All artwork and photography are copyrighted and protected under international copyright laws. Artwork may not be reproduced in any form, stored, or manipulated without prior written permission from {{ currentSite.name }} and the copyright holders.</small>
+  </div>
+</div>
+{# End Copyright #}
+
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 cell text-center">
+       <div>VAT — {{company.companyVat}}</div>
+       <div>Company Number — {{company.companyNumber}}</div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}

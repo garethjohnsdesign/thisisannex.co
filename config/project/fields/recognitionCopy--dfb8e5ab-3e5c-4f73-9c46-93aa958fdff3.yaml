@@ -1,0 +1,27 @@
+contentColumnType: text
+fieldGroup: 3fc14f6c-ba8d-46bd-b8fc-759a5beed7f4
+handle: recognitionCopy
+instructions: ''
+name: 'Recognition Copy'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Custom.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

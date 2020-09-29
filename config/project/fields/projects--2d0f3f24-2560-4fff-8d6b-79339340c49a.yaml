@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: d5118fb5-2e06-44ac-aefe-71cece0c7cc0
+handle: projects
+instructions: ''
+name: Projects
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_projects}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

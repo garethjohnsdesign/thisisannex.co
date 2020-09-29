@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 3fc14f6c-ba8d-46bd-b8fc-759a5beed7f4
+handle: clients
+instructions: ''
+name: Clients
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_clients_1}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,36 @@
+fieldLayouts:
+  f00617d5-bda5-43c2-ac10-cb1321ffec09:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e749f839-9bf1-45c4-95a0-85b305edeaa0
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9ccc8465-065e-43d4-a80c-3659fb4e3376
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fb50c747-d951-4667-8094-78a8c3eb8d23
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: site
+name: Site

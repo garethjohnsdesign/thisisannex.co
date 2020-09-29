@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: press
+name: Press
+propagationMethod: all
+siteSettings:
+  8a2043ba-0ab6-482c-bb78-9c06b90e1891:
+    enabledByDefault: true
+    hasUrls: true
+    template: default/press
+    uriFormat: press
+type: single

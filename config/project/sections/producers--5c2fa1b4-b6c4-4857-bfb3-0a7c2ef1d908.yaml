@@ -1,0 +1,14 @@
+enableVersioning: false
+handle: producers
+name: Producers
+propagationMethod: all
+siteSettings:
+  8a2043ba-0ab6-482c-bb78-9c06b90e1891:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: e2544b56-9578-4807-a190-6f8f5dc56a18
+type: structure

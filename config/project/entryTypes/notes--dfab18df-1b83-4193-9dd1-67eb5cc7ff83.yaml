@@ -1,0 +1,25 @@
+fieldLayouts:
+  5b4aeca1-1485-4999-b95b-23f6e19bf81a:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 04ab3c60-f325-48ea-bf96-347befb870e0
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: cc7a7777-17c5-45ef-829d-9b277cb85134
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Tab 1'
+        sortOrder: 1
+handle: notes
+hasTitleField: true
+name: Notes
+section: fafd081a-fdeb-4537-94ea-90f861360a94
+sortOrder: 1
+titleFormat: ''

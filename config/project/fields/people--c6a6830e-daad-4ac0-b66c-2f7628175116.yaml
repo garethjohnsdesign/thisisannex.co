@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: afa397d2-521d-48d6-acb2-4d4e53b2fd50
+handle: people
+instructions: ''
+name: People
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_people}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

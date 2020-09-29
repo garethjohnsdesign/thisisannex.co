@@ -1,0 +1,98 @@
+fieldLayouts:
+  77fbf346-53be-42f7-8f47-d88ac3cd219c:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            autofocus: false
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 49039979-9733-4e1e-bb92-be4e36d5c222
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cc7a7777-17c5-45ef-829d-9b277cb85134
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4fea65b6-ace0-410c-b9b0-006dfb431f65
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: dfb201c1-5d86-40c2-8ef8-8a447a607828
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fe83906d-6f96-4f77-9151-41326628a78d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1abe3543-0a12-4298-ad7d-1a93ca2d280c
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
+handle: contact
+hasTitleField: false
+name: Contact
+section: 65923fc6-a652-4d40-88b1-c54766df929e
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

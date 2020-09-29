@@ -1,0 +1,114 @@
+{% set bodyClass = 'about' %}
+
+{% if entry.seoTitle | length %}
+{% set seoTitle = entry.seoTitle %}
+{% else %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription | length %}
+{% set seoDescription = entry.seoDescription %}
+{% endif %}
+
+{% extends "_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+{% block main %}
+
+{# Hero #}
+{% include "_includes/blocks/hero" %}    
+{# End Hero #}
+
+{# About #}
+<div class="grid-container" data-aos="fade-in">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
+      <div class="dark-gray small text-uppercase letter-spacing--loose padding-bottom-1">About</div>
+      {{entry.copy}}
+    </div>
+  </div>
+</div>
+{# End About #}
+
+{# Clients #}
+<div class="grid-container" data-aos="fade-in">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
+      <div class="dark-gray small text-uppercase letter-spacing--loose padding-bottom-1">Clients</div>
+      {% if entry.clientCopy | length %}
+      {{entry.clientCopy | markdown}}
+      {% endif %}
+      <ul class="menu align-center">
+        {% for client in entry.clients.all()  %}
+        {% if client.domain %}
+        <li><a href="{{ client.domain }}">{{ client.client }}</a></li>
+        {% else %}
+        <li class="menu-text">{{ client.client }}</li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+{# End Clients #}
+
+{# Recognition #}
+<div class="grid-container" data-aos="fade-in">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
+      <div class="dark-gray small text-uppercase letter-spacing--loose padding-bottom-1">Recognition</div>
+      {% if entry.recognitionCopy | length %}
+      {{entry.recognitionCopy | markdown}}
+      {% endif %}
+      <ul class="menu align-center">
+        {% for award in entry.recognition.all()  %}
+        {% if award.domain %}
+        <li><a href="{{ award.domain }}">{{ award.award }}</a></li>
+        {% else %}
+        <li class="menu-text">{{ award.award }}</li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+{# End Recognition #}
+
+{# Team #}
+<div class="grid-container padding-bottom-2" data-aos="fade-in">
+  
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center padding-bottom-0">
+        <div class="dark-gray small text-uppercase letter-spacing--loose">Team</div>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
+        <div class="grid-x grid-padding-x grid-padding-y">
+          {% for person in entry.people.all()  %}
+            <div class="small-12 medium-4 cell text-center padding-bottom-0">
+              <div>{{ person.person }}</div>
+              <div class="dark-gray">{{ person.department }}</div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+</div>
+{# End Team #}
+
+
+{% endblock %}
+
+{% block cta %}
+{% include "_includes/global/cta" %}
+{% endblock %}
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}

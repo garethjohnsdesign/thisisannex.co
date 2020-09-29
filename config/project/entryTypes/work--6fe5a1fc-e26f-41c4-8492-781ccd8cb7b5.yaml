@@ -1,0 +1,7 @@
+handle: work
+hasTitleField: false
+name: Work
+section: a99673a9-d571-4be3-ad83-d9bc203be355
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleLabel: null

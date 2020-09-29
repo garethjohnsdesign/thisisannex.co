@@ -1,0 +1,29 @@
+<a href="{{ project.url }}">
+  {% set image = project.image.one() %}
+  {% if image | length %}
+  <div class="light-gray-background-color excerpt">
+    <div class="image--24-1" data-interchange="{% if image | length %}{% include "_includes/images/full/16-9/interchange-img-small-12-medium-6" %}{% endif %}" data-aos="fade-in" data-aos-delay="100">
+      <div class="grid-y content align-center" style="height: 100%">
+        <div class="shrink cell padding-1 white text-center small">
+          <div class="h4 margin-bottom-0">{{ project.length }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="margin-top-1 text-uppercase text-center small" data-aos="fade-in" data-aos-delay="150">{{ project.title }} — {{ project.client }}</div>
+  {% set director = project.director.one() %}
+  <div class="margin-top-0 text-uppercase text-center small dark-gray" data-aos="fade-in" data-aos-delay="200">{{ director.title }}</div>
+  {% else %}
+  <div class="image--24-1">
+    <div class="grid-y content align-center-middle" style="height: 100%">
+      <div class="shrink cell padding-1 text-center">
+          <h2 class="margin-bottom-0">{{ project.title }}</h2>
+      </div>
+    </div>
+  </div>
+  {% set typeOfInProduction = project.typeOfInProduction.one() %}
+  {% if typeOfInProduction|length %}
+  <div class="margin-top-1 sans-regular text-uppercase letter-spacing--loose text-center small">{{ typeOfInProduction }}</div>
+  {% endif %}
+  {% endif %}
+</a>

@@ -1,0 +1,105 @@
+field: 49039979-9733-4e1e-bb92-be4e36d5c222
+fieldLayouts:
+  8ac3992b-5431-44c4-9ec7-bb8c99b28ccf:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 38bb7611-1cc9-4931-838a-5e58f3eb5a06
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4d06353e-1834-4e7c-8611-05fc0ded53a7
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c724603d-df08-4e21-a279-6a468d0e3a87
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  38bb7611-1cc9-4931-838a-5e58f3eb5a06:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:244f7440-a428-4998-8c23-00991784b369'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Add a hero image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:244f7440-a428-4998-8c23-00991784b369'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  4d06353e-1834-4e7c-8611-05fc0ded53a7:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: video
+    instructions: ''
+    name: Video
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  c724603d-df08-4e21-a279-6a468d0e3a87:
+    contentColumnType: text
+    fieldGroup: null
+    handle: copy
+    instructions: ''
+    name: Copy
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Custom.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: hero
+name: Hero
+sortOrder: 1

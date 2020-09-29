@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: work
+name: Work
+propagationMethod: all
+siteSettings:
+  8a2043ba-0ab6-482c-bb78-9c06b90e1891:
+    enabledByDefault: true
+    hasUrls: true
+    template: work/work
+    uriFormat: work
+type: single

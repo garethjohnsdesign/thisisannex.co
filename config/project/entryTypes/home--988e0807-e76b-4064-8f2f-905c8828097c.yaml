@@ -1,0 +1,87 @@
+fieldLayouts:
+  f3759aa3-5c88-485b-846e-f57df9d00c1d:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 372a5521-190d-44d5-83ad-8737b49bdbdd
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2d0f3f24-2560-4fff-8d6b-79339340c49a
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Home
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: dfb201c1-5d86-40c2-8ef8-8a447a607828
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fe83906d-6f96-4f77-9151-41326628a78d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1abe3543-0a12-4298-ad7d-1a93ca2d280c
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
+handle: home
+hasTitleField: false
+name: Home
+section: 8ae5cd1b-a7ec-4968-94f8-e41aec2b241d
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

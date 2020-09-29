@@ -1,0 +1,67 @@
+{% set bodyClass = 'cv' %}
+{% set allProjects = craft.entries
+.section('projects')
+.orderBy('postDate desc')
+.all() %}
+
+{% set seoTitle = "CV" %}
+{% set seoDescription = "CV" %}
+
+{% extends "_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+{% block main %}
+
+<!-- Projects -->
+<div class="grid-container">
+
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 cell small">
+
+
+{% for date, projects in allProjects | group("postDate|date('Y')") %}
+          <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="small-12 medium-12 cell text-center">
+              <h5 class="text-uppercase sans-regular letter-spacing--loose">{{ date }}</h5>
+            </div>
+          </div>
+          {% for project in projects %}
+          <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-6 medium-4 cell text-uppercase">
+            <a href="{{ project.url }}" class="sans-regular letter-spacing--loose">{{ project.title }}</a>
+          </div>
+          <div class="small-6 medium-3 cell">
+            {{ project.director }}
+          </div>
+          <div class="small-12 medium-5 cell text-left hide-for-small-only">
+            {{ project.with }}
+          </div>
+{#
+          <div class="small-12 medium-5 cell">
+          {% if project.awards|length %}
+            {% for award in project.awards %}
+              <div>{{ award.award }}</div>
+            {% endfor %}
+          {% endif %}
+          </div>
+#}
+          </div>
+          {% endfor %}
+      {% endfor %}
+
+
+  </div>
+</div>
+
+
+</div>
+<!-- End Projects -->
+{% endblock %}
+
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}

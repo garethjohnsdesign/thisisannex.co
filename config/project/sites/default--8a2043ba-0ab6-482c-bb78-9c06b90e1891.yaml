@@ -1,0 +1,9 @@
+baseUrl: 'http://$DEFAULT_SITE_URL'
+enabled: true
+handle: default
+hasUrls: true
+language: en-GB
+name: Annex
+primary: true
+siteGroup: 6ff0064a-f99e-4369-b70b-9dbe09620a22
+sortOrder: 1

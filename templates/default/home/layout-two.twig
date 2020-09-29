@@ -1,0 +1,94 @@
+{% set bodyClass = 'home-two' %}
+
+{% if entry.seoTitle | length %}
+{% set seoTitle = entry.seoTitle %}
+{% else %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription | length %}
+{% set seoDescription = entry.seoDescription %}
+{% endif %}
+
+{% set carousel = entry.carousel.orderBy('RAND()').all() %}
+
+{% extends "default/_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+{% block main %}
+
+<div class="swiper-container padding-bottom-2" id="carousel--hero" data-aos="fade-in" data-aos-delay="100">
+  <div class="swiper-wrapper">
+    {% for project in carousel %}
+    {% set image = project.image.one() %}
+    <div class="swiper-slide black-background-color">
+        <div class="image--slide" {% if not project.previewVideo %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}"{% endif %} data-aos="fade-in">
+
+        <div class="grid-y height-100 align-center content">
+          <div class="auto cell text-center white">
+
+            <div class="grid-y align-center height-100" data-aos="fade-up" data-aos-delay="600">
+              <div class="shrink cell text-center">
+                <a href="{{ project.url }}">
+                  <div class="serif-display h1 margin-bottom-0 margin-top-3">{{project.title}}</div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="shrink cell text-center white">
+
+            <div class="grid-x grid-padding-x grid-padding-y align-center" data-aos="fade-in" data-aos-delay="700">
+              <div class="small-10 medium-8 cell text-center padding-top-0">
+                <a href="{{ project.url }}">
+                  {% if project.director|length %}
+                  {% set director = project.director.one() %}
+                  <div class="text-uppercase">{{ director.title }}</div>
+                  {% endif %}
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        {% if project.previewVideo|length %}
+          <video autoplay loop muted class="video" poster="">
+            <source data-src="{{ project.previewVideo }}" type="video/mp4" data-aos="fade-in">
+          </video>        
+        {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+      {% for block in entry.projects.all() %}
+      {% switch block.type %}
+      {% case "project" %}
+      <div class="{{ block.width.value }} cell">
+      {% set project = block.project.one() %}
+      {% include "_includes/blocks/excerpt" %}
+      </div>
+      {% endswitch %}
+    {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block cta %}
+{% include "_includes/global/cta" %}
+{% endblock %}
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}

@@ -1,0 +1,176 @@
+{% set bodyClass = 'project' %}
+
+{% if entry.seoTitle|length %}
+{% set seoTitle = entry.seoTitle %}
+{% elseif entry.title|length %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription|length %}
+{% set seoDescription = entry.seoDescription|striptags|raw %}
+{% else %}
+{% set seoDescription = entry.title ~ ' with ' ~ entry.with %}
+{% endif %}
+
+{% if entry.image|length  %}
+{% set asset = entry.image.one() %}
+{% set seoImage = craft.imager.transformImage(asset, { width: 1200, height: 630, dpr: 1, position: asset.getFocalPoint() }) %}
+{% endif %}
+
+{# Set parameters for prev/next elements list #}
+{% set params = craft.entries
+.section('projects')
+.relatedTo(entry.typeOfProject)
+.orderBy('postDate desc') %}
+
+{# Get the prev/next elements #}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+
+
+{% extends "_layouts/site" %}
+
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+
+{% block main %}
+
+<!-- Content -->
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+
+<!-- Previous -->
+<div class="auto cell show-for-large project__pagination">
+  {% if prevEntry %}
+  <a href="{{ prevEntry.url }}">
+    <div class="grid-y align-center" style="height: 100%;" data-tippy-content="{{ prevEntry.title }}">
+    </div>
+  </a>
+  {% endif %}
+</div>
+<!-- End Previous -->
+
+<!-- Center -->
+<div class="small-12 medium-10 large-10 xlarge-8 cell">
+
+{% set blocks = entry.seasonsEpisodes.all() %}
+{% if blocks|length %}
+  {% for block in blocks %}
+      
+{% switch block.type %}
+    {% case "sectionTitle" %}
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 cell text-center">
+        <h2 class="logo text-uppercase letter-spacing--loose h5 margin-bottom-0">Test</h2>
+      </div>
+    </div>
+    {% case "seasonEpisode" %}
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 cell text-center">
+        <h2 class="logo text-uppercase letter-spacing--loose h5 margin-bottom-0">{{block.seasonEpisode}}</h2>
+      </div>
+    </div>
+    
+    {% if block.video %}
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 cell text-center">
+        <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ block.video }}"></div>
+      </div>
+    </div>
+    {% else %}
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 cell text-center">
+      {% set image = block.image.one() %}
+      <div class="image--16-9" data-interchange="{% if image | length %}{% include "_includes/images/full/16-9/interchange-img-small-12-medium-6" %}{% endif %}"></div>
+      </div>
+    </div>
+    {% endif %}
+    
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 medium-12 cell text-center">
+    
+      <div>Director<span class="padding-left dark-gray">{{ block.director }}</span></div>
+      <div>With<span class="padding-left dark-gray">{{ block.with }}</span></div>
+    
+      </div>
+    </div>
+    {% default %}
+        <p>A font walks into a bar.</p>
+        <p>The bartender says, “Hey, we don’t serve your type in here!”</p>
+{% endswitch %}
+
+
+  {% endfor %}
+{% endif %}
+
+{#
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 cell text-center">
+    <div id="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ entry.video }}"></div>
+  </div>
+</div>
+#}
+
+<!-- Credits -->
+{#
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 medium-12 cell text-center">
+
+  {% set typeOfFilm = entry.typeOfFilm.all() %}
+  {% if typeOfFilm|length %}
+    <ul class="menu align-center">
+      {% for rel in typeOfFilm %}
+          <li class="dark-gray small text-uppercase sans-regular letter-spacing--loose padding-bottom-1">{{ rel.title }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <div>Director<span class="padding-left dark-gray">{{ entry.director }}</span></div>
+  <div>With<span class="padding-left dark-gray">{{ entry.with }}</span></div>
+
+  </div>
+</div>
+#}
+
+{#
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 medium-6 cell text-center small">
+    <a class="" data-open="reveal{{entry.id}}"><svg class="icon icon-arrows icon-add"><use xlink:href="/assets/icons/symbol-defs.svg#icon-add"></use></svg></a>
+  </div>
+</div>
+#}
+<!-- End Credit -->
+
+<!-- Mobile Pagination -->
+{#
+{% if nextEntry %}
+<div class="grid-x grid-padding-x grid-padding-y align-center hide-for-large">
+  <div class="shrink cell text-center">
+    <a href="{{ nextEntry.url }}"><svg class="icon icon-arrows icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></a>
+  </div>
+</div>
+{% endif %}
+#}
+<!-- End Mobile Pagination -->
+      
+</div>
+<!-- End Center -->
+
+<!-- Next -->
+<div class="auto cell show-for-large project__pagination">
+  {% if nextEntry %}
+  <a href="{{ nextEntry.url }}">
+    <div class="grid-y align-center" style="height: 100%;" data-tippy-content="{{ nextEntry.title }}">
+{#       <div class="shrink cell text-center"><svg class="icon icon-arrows icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></div> #}
+    </div>
+  </a>
+  {% endif %}
+</div>
+<!-- End Next -->
+
+</div>   
+<!-- End Content -->
+
+{% endblock %}

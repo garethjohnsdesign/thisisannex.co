@@ -1,0 +1,144 @@
+fieldLayouts:
+  1e7c767c-25fe-40b9-9a49-c549e2d2b70a:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 49039979-9733-4e1e-bb92-be4e36d5c222
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cc7a7777-17c5-45ef-829d-9b277cb85134
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: About
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: ca761e7e-5390-4579-978a-bb6f7a552e10
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7cdae4e9-4b96-4826-95c8-c73b76c22d70
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Clients
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: dfb201c1-5d86-40c2-8ef8-8a447a607828
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fe83906d-6f96-4f77-9151-41326628a78d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1abe3543-0a12-4298-ad7d-1a93ca2d280c
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: dfb8e5ab-3e5c-4f73-9c46-93aa958fdff3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: af242e8f-8a13-4b63-86e6-1520c7607635
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Recognition
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: c6a6830e-daad-4ac0-b66c-2f7628175116
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Team
+        sortOrder: 5
+handle: about
+hasTitleField: false
+name: About
+section: 94480a54-8503-4138-b351-a44abb1952d6
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,68 @@
+field: af242e8f-8a13-4b63-86e6-1520c7607635
+fieldLayouts:
+  13f0fec9-4b02-412c-a7e9-cbd2b5ab6379:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7add3a54-182a-414e-9706-196f0cf62b86
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ef558889-ac7b-4bee-b79e-63e7888077f5
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7add3a54-182a-414e-9706-196f0cf62b86:
+    contentColumnType: text
+    fieldGroup: null
+    handle: award
+    instructions: ''
+    name: Award
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ef558889-ac7b-4bee-b79e-63e7888077f5:
+    contentColumnType: text
+    fieldGroup: null
+    handle: domain
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: award
+name: Award
+sortOrder: 1

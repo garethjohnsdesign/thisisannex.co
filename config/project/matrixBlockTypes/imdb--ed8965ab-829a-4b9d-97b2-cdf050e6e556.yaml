@@ -1,0 +1,34 @@
+field: 177d26d8-196e-40fa-80c8-8dc29f7a4139
+fieldLayouts:
+  9ea9e948-8786-4f07-8709-03dc4227687f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 98fa0c75-1744-4397-b907-3b374336244e
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  98fa0c75-1744-4397-b907-3b374336244e:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: socialLink
+    instructions: ''
+    name: Link
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: imdb
+name: IMDB
+sortOrder: 5

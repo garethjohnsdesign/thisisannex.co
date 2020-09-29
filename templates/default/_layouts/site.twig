@@ -1,0 +1,70 @@
+{% extends "default/_layouts/base" %}
+
+{% import "_macros/isactive" as isactive %}
+
+{% block body %}
+
+<div class='cursor'></div>
+
+<!-- Loading -->
+{% include "_includes/global/loading" %}
+<!-- End Loading -->
+
+<div class="off-canvas-wrapper">
+<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas data-transition="push" data-auto-focus="false" data-close-on-click="false" data-content-overlay="false">
+  <div class="grid-x grid-padding-x grid-padding-y padding-bottom-0 align-justify align-middle">
+  <div class="shrink cell align-middle padding-bottom-0">
+  		<ul class="menu vertical">
+      {% set categoryQuery = craft.categories().group('typeOfProject') %}
+      {% set categories = categoryQuery.all() %}
+      {% nav category in categories %}
+      <li{{ isactive.isActive(category.slug) }}>
+      <a href="{{ category.url }}" class="h5 text-uppercase padding-left-0" data-toggle="menuBar offCanvasLeft">{{ category.title }}</a>
+      </li>
+      {% endnav %}
+      <li {{ isactive.isActive('about') }} data-toggle="menuBar offCanvasLeft"><a href="/about" class="h5 text-uppercase padding-left-0">About</a></li>
+      <li {{ isactive.isActive('contact') }} data-toggle="menuBar offCanvasLeft"><a href="/contact" class="h5 text-uppercase padding-left-0">Contact</a></li>
+      </ul>
+  </div>
+  </div>
+</div>
+
+<div class="off-canvas-content viewport" data-off-canvas-content>
+  <!-- Navigation -->
+  <nav class="" id="swup-navigation">
+  {% block navigation %}
+  {% endblock %}
+  </nav>
+  <!-- End Navigation -->
+  
+  <!-- Content -->
+  <main class="grid-x align-center-middle swup-transition-fade" id="swup-body">
+  <div class="small-12 cell">	
+  {% block main %}
+  {% endblock %}
+  </div>
+  </main>
+  <!-- End Content -->
+
+  <!-- Call to Action -->
+  <div class="swup-transition-fade" id="swup-cta">
+  {% block cta %}
+  {% endblock %}
+  </div>
+  <!-- End Call to Action -->
+  
+  <!-- Footer -->
+  <footer class="swup-transition-fade" id="swup-footer">
+  {% block footer %}
+  {% endblock %}
+  </footer>
+  <!-- End Footer-->
+</div>
+
+<!-- Navigation -->
+<div class="swup-transition-fade" id="swup-overlay">
+{% include "_includes/reveal/navigation" %}
+</div>
+<!-- End Navigation -->
+</div>
+{% endblock %}

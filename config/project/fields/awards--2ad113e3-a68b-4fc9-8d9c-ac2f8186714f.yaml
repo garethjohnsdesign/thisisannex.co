@@ -1,0 +1,38 @@
+contentColumnType: text
+fieldGroup: 04b3b4bb-5a04-4d55-a1fc-39e4312e4e96
+handle: awards
+instructions: ''
+name: Awards
+searchable: true
+settings:
+  addRowLabel: 'Add award'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Award
+            -
+              - handle
+              - award
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+  maxRows: ''
+  minRows: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

@@ -1,0 +1,168 @@
+fieldLayouts:
+  50a9dc97-c214-46f1-a6eb-6059f982357c:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0e30375a-441c-40da-ac14-be5255445806
+            instructions: 'Client or brand of project'
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 872a496d-1bf8-49a8-bdf6-8c182f0e2298
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 04ab3c60-f325-48ea-bf96-347befb870e0
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d7b767e3-b7c2-4a02-a2c2-556c9c92ff1b
+            instructions: 'URL of Vimeo Video'
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a2a8616b-6624-41af-93a2-0da771d6b113
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 64e51b90-5f2d-49a4-8a17-c6a5ff230049
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cc7a7777-17c5-45ef-829d-9b277cb85134
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b590bffb-b895-4106-ad8a-5aef5a0624aa
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 30f03610-28d7-4b19-a068-e7a8273b06f2
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2ad113e3-a68b-4fc9-8d9c-ac2f8186714f
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b4c9ab1f-2382-42ed-a624-d4a42f1389a7
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 51fa44d3-fd4e-4982-b45a-99be00c2c501
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Projects
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: dfb201c1-5d86-40c2-8ef8-8a447a607828
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fe83906d-6f96-4f77-9151-41326628a78d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
+handle: projects
+hasTitleField: true
+name: Projects
+section: 32174234-e8c3-40d4-9725-77ff2bd2366a
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

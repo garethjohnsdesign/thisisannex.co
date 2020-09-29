@@ -1,0 +1,36 @@
+{% set bodyClass = 'notes' %}
+
+{% set notes = craft.entries
+.section('notes')
+.orderBy('postDate desc')
+.all() %}
+
+{% extends "_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+{% block main %}
+
+<!-- Notes -->
+
+{% set projectCount = notes|length %}
+
+<div class="grid-container">
+
+<div class="grid-x grid-padding-x grid-padding-y {% if projectCount > 2 %}align-left{% else %}align-center{% endif %}">
+  {% for note in notes %}
+    <div class="small-12 medium-6 {% if projectCount > 2 %}xlarge-4{% else %}xlarge-4{% endif %} xxlarge-4 cell ">
+    {% include "_includes/blocks/note" %}
+    </div>
+  {% endfor %}
+</div>
+</div>
+<!-- End Projects -->
+{% endblock %}
+
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}

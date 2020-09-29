@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 04b3b4bb-5a04-4d55-a1fc-39e4312e4e96
+handle: director
+instructions: ''
+name: Director
+searchable: true
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:b7517307-0a83-443e-a91c-fcadf20ff746'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

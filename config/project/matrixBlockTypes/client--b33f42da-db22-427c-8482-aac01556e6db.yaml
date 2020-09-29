@@ -1,0 +1,62 @@
+field: 7cdae4e9-4b96-4826-95c8-c73b76c22d70
+fieldLayouts:
+  2bc363ba-9107-490a-b7c1-7f718a27c692:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 40e403b5-7ffc-4e38-9652-765d23881e80
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aed55f8e-fbe2-4e92-923e-702dc6054030
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  40e403b5-7ffc-4e38-9652-765d23881e80:
+    contentColumnType: text
+    fieldGroup: null
+    handle: client
+    instructions: ''
+    name: Client
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  aed55f8e-fbe2-4e92-923e-702dc6054030:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: domain
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: client
+name: Client
+sortOrder: 1
