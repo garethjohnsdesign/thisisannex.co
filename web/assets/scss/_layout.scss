@@ -187,7 +187,12 @@ html.is-animating .swup-transition-color {
 
 .white {
   color: $white;
-  @include links ($white, $medium-gray);
+  a {
+    color: $white;
+    &:hover {
+      color: rgba($white, 0.75);   
+    }
+  }
 }
 
 .medium-gray {
