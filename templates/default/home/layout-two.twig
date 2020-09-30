@@ -74,6 +74,10 @@
   <div class="grid-x grid-padding-x grid-padding-y align-center">
       {% for block in entry.projects.all() %}
       {% switch block.type %}
+      {% case "subheader" %}
+      <div class="small-12 medium-8 cell text-center" data-aos="fade-in">
+      <h6 class="text-uppercase letter-spacing--loose">{{ block.subheader }}</h6>
+      </div>
       {% case "project" %}
       <div class="{{ block.width.value }} cell">
       <div class="grid-y align-center height-100">
