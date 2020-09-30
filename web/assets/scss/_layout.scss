@@ -51,6 +51,14 @@
 // 2. Global
 // ---------
 
+html {
+  cursor: none;
+}
+
+a {
+  cursor: none;
+}
+
 .menu .menu-text {
 font-weight: normal;
 }
@@ -60,7 +68,7 @@ font-weight: normal;
 }
 
 .off-canvas-content {
-  cursor: default;
+  cursor: none;
   display: flex;
   flex-direction: column;
   min-height: calc(var(--vh, 1vh) * 100);
@@ -86,7 +94,8 @@ footer {
 
 
 body {
-  cursor: default;
+//   cursor: default;
+  cursor: none;
   font-kerning: normal;
 }
 
@@ -713,6 +722,28 @@ z-index: -1;
 
 
 .cursor {
+ position: absolute;
+ pointer-events: none;
+ z-index: 10000;
+}
+.cursor:before, .cursor:after {
+  position: absolute;
+  top: -10px;
+  content: ' ';
+  height: 20px;
+  width: 3px;
+  background-color: $black;
+}
+.cursor:before {
+  transform: rotate(45deg);
+}
+.cursor:after {
+  transform: rotate(-45deg);
+}
+
+
+/*
+.cursor {
   position: absolute;
   height: var(--circle);
   width: var(--circle);
@@ -733,6 +764,7 @@ z-index: -1;
 .cursor:first-child.big{
   --circle:24px;
 }
+*/
 
 // 2. Loading
 // ----------
@@ -781,3 +813,7 @@ z-index: -1;
 
 ul#cyclelist {overflow:hidden;}
 ul#cyclelist li {font-size:1.4em;padding:20px;opacity:0;position:absolute}
+
+.hamburger {
+ cursor: none;
+}
