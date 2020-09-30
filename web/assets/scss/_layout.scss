@@ -777,3 +777,7 @@ z-index: -1;
   -webkit-text-stroke-color: black;
   letter-spacing: 2px;
 }
+
+
+ul#cyclelist {overflow:hidden;}
+ul#cyclelist li {font-size:1.4em;padding:20px;opacity:0;position:absolute}

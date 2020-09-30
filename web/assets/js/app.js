@@ -56,6 +56,25 @@ $('a').on({
 
 
 
+$(document).ready(function() {
+
+	 var j = 0;
+	 var delay = 200; //millisecond delay between cycles
+	 function cycleThru(){
+	         var jmax = $("ul#cyclelist li").length -1;
+	         $("ul#cyclelist li:eq(" + j + ")")
+	                 .animate({"opacity" : "1"} ,10)
+	                 .animate({"opacity" : "1"}, delay)
+	                 .animate({"opacity" : "0"}, 10, function(){
+	                         (j == jmax) ? j=0 : j++;
+	                         cycleThru();
+	                 });
+	         };
+
+	 cycleThru();
+
+ });
+
 
 
 $(function() {

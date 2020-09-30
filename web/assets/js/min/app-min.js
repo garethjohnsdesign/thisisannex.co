@@ -34754,6 +34754,25 @@
           jquery('.cursor').removeClass('big');
         }
       });
+      jquery(document).ready(function () {
+        var j = 0;
+        var delay = 200; //millisecond delay between cycles
+
+        function cycleThru() {
+          var jmax = jquery("ul#cyclelist li").length - 1;
+          jquery("ul#cyclelist li:eq(" + j + ")").animate({
+            "opacity": "1"
+          }, 10).animate({
+            "opacity": "1"
+          }, delay).animate({
+            "opacity": "0"
+          }, 10, function () {
+            j == jmax ? j = 0 : j++;
+            cycleThru();
+          });
+        }
+        cycleThru();
+      });
       jquery(function () {
         var isIOS = /iPad|iPhone|iPod/.test(navigator.platform) || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
 
