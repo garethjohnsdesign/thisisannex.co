@@ -58,7 +58,12 @@
 {% if entry.video | length %}
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 cell text-center">
-    <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ entry.video }}"></div>
+    <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ entry.video }}">
+    
+    <h2 class="serif-display margin-bottom-0">{{ entry.title }}</h2>
+    <div class="text-uppercase small letter-spacing--loose">{{entry.client}}</div>
+
+    </div>
   </div>
 </div>
 {% elseif entry.image | length %}

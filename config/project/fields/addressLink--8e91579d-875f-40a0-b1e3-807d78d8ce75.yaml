@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: 0da37b13-2d77-4500-8d1f-377fbac8ae30
+handle: addressLink
+instructions: ''
+name: 'Address Link'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url
