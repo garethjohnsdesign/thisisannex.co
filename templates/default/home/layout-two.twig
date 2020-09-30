@@ -76,7 +76,7 @@
       {% switch block.type %}
       {% case "subheader" %}
       <div class="small-12 medium-8 cell text-center" data-aos="fade-in">
-      <h6 class="text-uppercase letter-spacing--loose">{{ block.subheader }}</h6>
+      <h6 class="text-uppercase letter-spacing--loose" data-tippy-content="{{ block.copy |striptags }}">{{ block.subheader }} ↗</h6>
       </div>
       {% case "project" %}
       <div class="{{ block.width.value }} cell">
