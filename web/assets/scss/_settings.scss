@@ -70,13 +70,14 @@
 
 $global-font-size: 100%;
 // $global-width: rem-calc(1200);
-$global-width: rem-calc(1440);
+$global-width: rem-calc(1000);
 // $global-lineheight: 1.5;
 $global-lineheight: 1.4;
 // $light-gray: #e6e6e6;
 $light-gray: #ebebeb;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+// $dark-gray: #8a8a8a;
+$dark-gray: #cacaca;
 $black: #111111;
 // $black: #292b2c;
 $white: #fefefe;
@@ -91,7 +92,7 @@ $foundation-palette: (
 */
 $foundation-palette: (
   primary: $black,
-  secondary: #f9d1bd,
+  secondary: $medium-gray,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -213,7 +214,7 @@ $header-styles: (
   ),
   'large': (
     'h1': ('font-size': 64, 'line-height': 1.0, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
-    'h2': ('font-size': 40, 'line-height': 1.2, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
+    'h2': ('font-size': 48, 'line-height': 1.2, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
     'h3': ('font-size': 31, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h4': ('font-size': 25, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h5': ('font-size': 20, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
@@ -221,7 +222,7 @@ $header-styles: (
   ),
   'xlarge': (
     'h1': ('font-size': 80, 'line-height': 1.0, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
-    'h2': ('font-size': 40, 'line-height': 1.2, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
+    'h2': ('font-size': 64, 'line-height': 1.2, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
     'h3': ('font-size': 31, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h4': ('font-size': 25, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h5': ('font-size': 20, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
@@ -229,7 +230,7 @@ $header-styles: (
   ),
   'xxlarge': (
     'h1': ('font-size': 90, 'line-height': 1.0, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
-    'h2': ('font-size': 40, 'line-height': 1.2, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
+    'h2': ('font-size': 80, 'line-height': 1.2, 'margin-top': 1rem, 'margin-bottom': $header-margin-bottom),
     'h3': ('font-size': 31, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h4': ('font-size': 25, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h5': ('font-size': 20, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
@@ -245,7 +246,7 @@ $paragraph-text-rendering: optimizeLegibility;
 $enable-code-inline: true;
 $anchor-color: $primary-color;
 // $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
-$anchor-color-hover: $primary-color;
+$anchor-color-hover: scale-color($secondary-color, $lightness: 0%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;

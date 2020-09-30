@@ -139,8 +139,10 @@ var mySwiper = new Swiper('.swiper-container', {
   
   // If we need pagination
   pagination: {
-    el: '.gallery-pagination',
+    el: '.swiper-pagination-test',
     type: 'fraction',
+    formatFractionCurrent: (number) => '0' + number,
+    formatFractionTotal: (number) => '0' + number,
   },
 
   // Navigation arrows

@@ -34823,8 +34823,14 @@
         loop: true,
         // If we need pagination
         pagination: {
-          el: '.gallery-pagination',
-          type: 'fraction'
+          el: '.swiper-pagination-test',
+          type: 'fraction',
+          formatFractionCurrent: function formatFractionCurrent(number) {
+            return '0' + number;
+          },
+          formatFractionTotal: function formatFractionTotal(number) {
+            return '0' + number;
+          }
         },
         // Navigation arrows
         navigation: {

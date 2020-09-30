@@ -32,6 +32,15 @@
 </div>
 {# End Global Contacts #}
 
+{# Global Contacts #}
+<div class="grid-x grid-padding-x align-center">
+  <div class="small-12 cell text-center">
+    <div class="dark-gray small text-uppercase sans-regular letter-spacing--loose">Studio</div>
+    {{site.shortAddress}}
+  </div>
+</div>
+{# End Global Contacts #}
+
 {# Contacts #}
 {% for contact in entry.contacts.all()  %}
     <div class="grid-x grid-padding-x grid-padding-y align-center">
@@ -86,6 +95,18 @@
        <div>Company Number — {{company.companyNumber}}</div>
   </div>
 </div>
+
+<!-- Terms and Privacy -->
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="shrink cell">
+    <ul class="menu simple dark-gray small text-uppercase sans-regular letter-spacing--loose">
+     <li><a href="/terms">Terms</a></li>
+     <li><a href="/privacy-policy">Privacy</a></li>
+     <li><a href="https://www.garethjohnsdesign.com">Credit</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End Terms and Privacy -->
 
 {% endblock %}
 

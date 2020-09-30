@@ -15,15 +15,10 @@
 {% include "_includes/global/navigation" %}
 {% endblock %}
 
-{% block main %}
-
-<!-- Projects -->
-{% set projectCount = projects|length %}
-<div class="grid-container padding-bottom-2">
-
+{% block category %}
 <div class="grid-x grid-padding-x align-center">
   <div class="small-12 cell text-center padding-bottom-0">
-    <ul class="menu small sans-regular text-uppercase letter-spacing--loose align-center">
+    <ul class="vertical medium-horizontal menu small sans-regular text-uppercase letter-spacing--loose align-center">
       {% nav menu in craft.categories.group('typeOfProject').all() %}
         <li class="{{ menu.slug == category.slug ? 'dark-gray' }}">
          <a href="{{ menu.url }}" class="">{{ menu.title }}</a>
@@ -34,16 +29,34 @@
 </div>
 
 <div class="grid-x grid-padding-x grid-padding-y align-center">
-  <div class="small-12 medium-10 large-8 xlarge-6 cell text-center">
+  <div class="small-12 medium-10 large-8 xlarge-7 xxlarge-6 cell text-center">
   {{ category.copy }}
   </div>
 </div>
+{% endblock %}
+
+{% block main %}
+
+<!-- Projects -->
+{% set projectCount = projects|length %}
+<div class="grid-container padding-bottom-2">
+
 
 
 <div class="grid-x grid-padding-x grid-padding-y {% if projectCount > 2 %}align-left{% else %}align-center{% endif %}">
   {% for project in projects %}
-    <div class="small-12 medium-6 {% if projectCount > 2 %}xlarge-6{% else %}xlarge-6{% endif %} xxlarge-6 cell padding-bottom-0">
-    {% include "_includes/blocks/excerpt" %}
+    <div class="small-12 medium-6 {% if projectCount > 2 %}xlarge-6{% else %}xlarge-6{% endif %} xxlarge-6 cell">
+
+
+
+      <div class="grid-y align-center height-100">
+        <div class="shrink cell text-center">
+      {% include "_includes/blocks/excerpt" %}
+          </div>
+      </div>
+
+
+
     </div>
   {% endfor %}
 </div>
@@ -51,6 +64,9 @@
 <!-- End Projects -->
 {% endblock %}
 
+{% block cta %}
+{% include "_includes/global/cta" %}
+{% endblock %}
 
 {% block footer %}
 {% include "_includes/global/footer" %}
