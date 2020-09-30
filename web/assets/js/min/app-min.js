@@ -34734,26 +34734,6 @@
       Foundation.Interchange.SPECIAL_QUERIES['xlarge-retina'] = 'only screen and (min-width: 75em), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (min--moz-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-device-pixel-ratio: 2), (min-width: 75em) and (min-resolution: 192dpi), (min-width: 75em) and (min-resolution: 2dppx)';
       Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min-width: 90em), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (min--moz-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-device-pixel-ratio: 2), (min-width: 75em) and (min-resolution: 192dpi), (min-width: 75em) and (min-resolution: 2dppx)';
       jquery(document).foundation();
-      jquery(document).mousemove(function (e) {
-        jquery('.cursor').eq(0).css({
-          left: e.pageX,
-          top: e.pageY
-        });
-        setTimeout(function () {
-          jquery('.cursor').eq(1).css({
-            left: e.pageX,
-            top: e.pageY
-          });
-        }, 120);
-      });
-      jquery('a').on({
-        mouseenter: function mouseenter() {
-          jquery('.cursor').addClass('big');
-        },
-        mouseleave: function mouseleave() {
-          jquery('.cursor').removeClass('big');
-        }
-      });
       jquery(document).ready(function () {
         var j = 0;
         var delay = 200; //millisecond delay between cycles

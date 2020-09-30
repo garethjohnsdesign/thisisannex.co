@@ -28,52 +28,6 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
   
 $(document).foundation();
 
-$(document).mousemove(function(e) {
-    $('.cursor')
-      .eq(0)
-      .css({
-        left: e.pageX,
-        top: e.pageY,
-      });
-    setTimeout(function() {
-      $('.cursor')
-        .eq(1)
-        .css({
-          left: e.pageX,
-          top: e.pageY,
-        });
-    }, 120);
-  })
-
-$('a').on({
-  mouseenter: function () { 
-    $('.cursor').addClass('big'); 
-  },
-  mouseleave: function () { 
-    $('.cursor').removeClass('big'); 
-  }
-});
-
-
-
-$(document).ready(function() {
-
-	 var j = 0;
-	 var delay = 200; //millisecond delay between cycles
-	 function cycleThru(){
-	         var jmax = $("ul#cyclelist li").length -1;
-	         $("ul#cyclelist li:eq(" + j + ")")
-	                 .animate({"opacity" : "1"} ,10)
-	                 .animate({"opacity" : "1"}, delay)
-	                 .animate({"opacity" : "0"}, 10, function(){
-	                         (j == jmax) ? j=0 : j++;
-	                         cycleThru();
-	                 });
-	         };
-
-	 cycleThru();
-
- });
 
 
 
