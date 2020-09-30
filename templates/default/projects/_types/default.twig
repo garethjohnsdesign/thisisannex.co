@@ -58,15 +58,16 @@
 {% if entry.video | length %}
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 cell text-center">
-{#     <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ entry.video }}"></div> #}
-<div class="plyr__video-embed js-player" id="player">
-  <iframe
-    src="https://player.vimeo.com/video/{{ entry.video|replace('https://vimeo.com/', '') }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-    allowfullscreen
-    allowtransparency
-    allow="autoplay"
-  ></iframe>
-</div>
+
+
+      <div class="plyr__video-embed js-player">
+        <iframe
+          src="https://player.vimeo.com/video/{{ entry.video|replace('https://vimeo.com/', '') }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+          allowfullscreen
+          allowtransparency
+          allow="autoplay"
+        ></iframe>
+      </div>
 
   </div>
 </div>
@@ -106,6 +107,11 @@
 
   {% if entry.length|length %}
   <div class="margin-top-1">{{ entry.length }}</div>
+  {% endif %}
+
+  {% if entry.director|length %}
+  {% set director = entry.director.one() %}
+  <div class="margin-top-1 text-uppercase dark-gray"><a href="{{ director.domain }}">More from director</a></div>
   {% endif %}
 
   </div>
