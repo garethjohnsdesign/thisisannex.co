@@ -59,8 +59,23 @@
     <vime-player playsinline>
       <vime-vimeo video-id="{{ entry.video|replace('https://vimeo.com/', '') }}"></vime-vimeo>
       
-      <vime-default-ui no-controls no-poster active-duration="50">
-      
+
+{#       <vime-ui class="testing" style="z-index:1"><h1 class="white">{{ entry.title }}</h1><div class="text-uppercase small letter-spacing--loose white">{{entry.client}}</div></vime-ui> #}
+
+
+
+      <vime-default-ui no-controls active-duration="50">
+
+<vime-poster>
+<div class="overlay-wrapper">
+<div class="grid-y height-100 align-center">
+  <div class="shrink cell text-center">
+  <h1 class="white">{{ entry.title }}</h1><div class="text-uppercase small letter-spacing--loose white">{{entry.client}}</div>
+  </div>
+</div>
+</div>
+</vime-poster>
+{#
       <vime-controls 
       active-duration="50"
       hideOnMouseLeave="true"
@@ -68,13 +83,8 @@
       <vime-click-to-play></vime-click-to-play>
       <div><h1 class="white">{{ entry.title }}</h1><div class="text-uppercase small letter-spacing--loose white">{{entry.client}}</div></div>
       </vime-controls>
+#}
       
-      
-      <vime-controls 
-      full-width 
-      pin="bottomLeft">
-      <vime-playback-control hide-tooltip></vime-playback-control>
-      </vime-controls>
       
       <vime-controls full-width>
       <vime-playback-control hide-tooltip></vime-playback-control>

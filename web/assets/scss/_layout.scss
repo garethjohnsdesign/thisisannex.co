@@ -782,3 +782,13 @@ z-index: -1;
 
 ul#cyclelist {overflow:hidden;}
 ul#cyclelist li {font-size:1.4em;padding:20px;opacity:0;position:absolute}
+
+
+.overlay-wrapper {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba($black, 0.25);
+}
