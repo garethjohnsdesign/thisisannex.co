@@ -52,6 +52,15 @@
 <link rel="home" href="{{ siteUrl }}" />
 <link rel="stylesheet" type="text/css" href="/assets/css/app.{{staticAssetsVersion}}.css">
 
+  <!-- Default theme. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css">
+  
+  <!-- Optional light theme (extends default). -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/light.css"> -->
+  
+  <!-- The library is lazy loaded so you have nothing to worry about, only what you use will be loaded. -->
+  <script defer type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+
 {% if env == 'production' %}
 {% include "default/_includes/global/analytics" %}
 {% endif %}

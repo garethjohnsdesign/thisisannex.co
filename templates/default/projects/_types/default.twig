@@ -58,17 +58,38 @@
 {% if entry.video | length %}
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 cell text-center">
+    <vime-player playsinline>
+      <vime-vimeo video-id="{{ entry.video|replace('https://vimeo.com/', '') }}"></vime-vimeo>
 
 
-      <div class="plyr__video-embed js-player">
-        <iframe
-          src="https://player.vimeo.com/video/{{ entry.video|replace('https://vimeo.com/', '') }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-          allowfullscreen
-          allowtransparency
-          allow="autoplay"
-        ></iframe>
-      </div>
+<h1 class="white">{{ entry.title }}</h1>
 
+  <vime-default-ui no-controls no-poster active-duration="50">
+
+    <vime-controls 
+    active-duration="50"
+    hideOnMouseLeave="true"
+    pin="center">
+    <vime-click-to-play></vime-click-to-play>
+    <div><h1 class="white">{{ entry.title }}</h1><div class="text-uppercase small letter-spacing--loose white">{{entry.client}}</div></div>
+    </vime-controls>
+
+
+    <vime-controls 
+    full-width 
+    pin="bottomLeft">
+    <vime-playback-control hide-tooltip></vime-playback-control>
+    </vime-controls>
+
+   <vime-controls full-width>
+      <vime-playback-control hide-tooltip></vime-playback-control>
+      <vime-volume-control hide-tooltip></vime-volume-control>
+      <vime-control-spacer></vime-control-spacer>
+      <vime-fullscreen-control hide-tooltip></vime-fullscreen-control>
+    </vime-controls>
+
+  </vime-default-ui>
+    </vime-player>
   </div>
 </div>
 {% elseif entry.image | length %}
@@ -80,17 +101,13 @@
 </div>
 {% endif %}
 
-<div class="grid-x grid-padding-x grid-padding-y align-center">
-  <div class="small-12 cell text-center">
-    <h2 class="serif-display margin-bottom-0">{{ entry.title }}</h2>
-    <div class="text-uppercase small letter-spacing--loose">{{entry.client}}</div>
-  </div>
-</div>
 
 <!-- Credits -->
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 medium-12 cell text-center small letter-spacing--loose">
   
+  <div class="text-uppercase letter-spacing--loose margin-bottom-1">{{ entry.title }} — {{entry.client}}</div>
+
   {% if entry.director|length %}
   {% set director = entry.director.one() %}
   <div class="text-uppercase"><span class="dark-gray padding-right-half">Director</span> {{ director.title }}</div>

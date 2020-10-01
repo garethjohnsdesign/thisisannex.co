@@ -60,7 +60,7 @@
         </div>
 
         {% if project.previewVideo|length %}
-          <video autoplay loop muted class="video" poster="">
+          <video autoplay loop muted class="video--background" poster="">
             <source data-src="{{ project.previewVideo }}" type="video/mp4" data-aos="fade-in">
           </video>        
         {% endif %}

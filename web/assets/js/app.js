@@ -2,6 +2,7 @@
 // ----------
 
 import $ from "jquery";
+import '@vime/core';
 import Plyr from 'plyr';
 import tippy, {followCursor} from 'tippy.js';
 import Swiper, { Navigation, Pagination, EffectFade, Keyboard, Autoplay} from 'swiper';
@@ -29,16 +30,17 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
 $(document).foundation();
 
 
+const player = document.querySelector('vime-player');
 
 
 $(function() {
   let isIOS = /iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
 
   if (isIOS) {
-    $("video.video").attr("playsinline", "")
+    $("video.video--background").attr("playsinline", "")
   }
 
-  $("video.video source").each(function(i) {
+  $("video.video--background source").each(function(i) {
     var sourceFile = $(this).attr("data-src");
     $(this).attr("src", sourceFile);
     var video = this.parentElement;
@@ -57,7 +59,7 @@ $(function() {
 
 $(function() {
 
-  const $videos = $("video.video source")
+  const $videos = $("video.video--background source")
 
 
   const index = 0
