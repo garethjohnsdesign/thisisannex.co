@@ -451,7 +451,7 @@ url('/assets/img/arrow-left@3x.png') 3x
   }
   &:hover .content {
     transition: $primary-transition;
-    background: rgba($black, 0);
+    background: rgba($black, 0.25);
     @include opacity(1);
   }
 }
