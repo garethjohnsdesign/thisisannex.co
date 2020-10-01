@@ -32,7 +32,7 @@
 
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 medium-10 large-8 xlarge-7 xxlarge-6 cell text-center">
-  {{ category.copy }}
+  <div class="serif-display h3">{{ category.copy | striptags }}</div>
   </div>
 </div>
 {% endblock %}

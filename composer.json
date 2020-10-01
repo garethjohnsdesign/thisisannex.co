@@ -22,7 +22,7 @@
     "craftcms/cms": "3.5.11.1",
     "vlucas/phpdotenv": "^2.4.0",
     "craftcms/google-cloud": "1.4.0",
-    "craftcms/redactor": "2.7.5",
+    "craftcms/redactor": "2.8.1",
     "nystudio107/craft-minify": "1.2.10",
     "aelvan/imager": "v2.4.0",
     "ether/seo": "3.6.6",

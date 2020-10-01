@@ -32,7 +32,17 @@
   </div>
 
   <div class="small-4 cell align-middle text-right">
-    <a href="/contact"><svg class="icon icon-search"><use xlink:href="/assets/icons/symbol-defs.svg#icon-search"></use></svg></a>
+{#     <a href="/contact"><svg class="icon icon-search"><use xlink:href="/assets/icons/symbol-defs.svg#icon-search"></use></svg></a> #}
+  <ul class="menu simple align-right">
+     {% for block in socials.socials.all() %}
+      {% switch block.type %}
+        {% case "instagram" %}
+          <li><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-instagram"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-instagram"></use></svg></a></li>
+        {% case "vimeo" %}
+          <li><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-imdb"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-vimeo"></use></svg></a></li>
+      {% endswitch %}
+      {% endfor %}
+    </ul>
   </div>
 </nav>
 <!-- End Desktop Navigation -->
