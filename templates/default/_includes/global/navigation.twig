@@ -39,7 +39,7 @@
         {% case "instagram" %}
           <li><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-instagram"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-instagram"></use></svg></a></li>
         {% case "vimeo" %}
-          <li><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-imdb"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-vimeo"></use></svg></a></li>
+          <li class="show-for-medium"><a href="{{block.socialLink}}" target="_blank"><svg class="icon icon-socials icon-imdb"><use xlink:href="/assets/icons/symbol-defs.{{staticAssetsVersion}}.svg#icon-vimeo"></use></svg></a></li>
       {% endswitch %}
       {% endfor %}
     </ul>
