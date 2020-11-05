@@ -818,3 +818,32 @@ nav.scrolled {
     background-color: $black;
   }
 }
+
+
+.category nav {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  @include links($black, $secondary-color);
+  color: $white;
+  transition: all 200ms linear;
+  padding: 2rem;
+  .hamburger span.bar {
+    background-color: $black;
+  }
+}
+
+.category nav.scrolled {
+  width: 100vw;
+  @include links($black, $dark-gray);
+  transition: all 200ms linear;
+  background-color: rgba($white, 0.98) !important;
+  .hamburger span.bar {
+    background-color: $black;
+  }
+}
+

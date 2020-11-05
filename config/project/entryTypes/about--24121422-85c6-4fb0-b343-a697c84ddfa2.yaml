@@ -134,6 +134,19 @@ fieldLayouts:
             width: 100
         name: Team
         sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 69520350-8290-4936-96fb-3e923b4f3708
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Collaborators
+        sortOrder: 6
 handle: about
 hasTitleField: false
 name: About

@@ -1,5 +1,5 @@
 {
-"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
+"AAInfo": "This is a CodeKit 3 project config file. EDITING THIS FILE IS A POOR LIFE DECISION. Doing so may cause CodeKit to crash and/or corrupt your project. Several critical values in this file are 64-bit integers, which JavaScript JSON parsers do not support because JavaScript cannot handle 64-bit integers. These values will be corrupted if the file is parsed with JavaScript. This file is not backwards-compatible with CodeKit 1 or 2. For details, see https://codekitapp.com/",
 "buildSteps": [
 	{
 		"name": "Process All Remaining Files and Folders",
@@ -7,7 +7,7 @@
 		"uuidString": "EDB44E38-DB9B-408C-B9C2-C572FB45B1A6"
 		}
 	],
-"creatorBuild": "32186",
+"creatorBuild": "33081",
 "files": {
 	"/.env": {
 		"cB": 0,
@@ -87,750 +87,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/minify.php",
-		"oF": 0
-		},
-	"/config/project/categoryGroups/typeOfProject--5364c36e-2029-4759-94b6-30b2ed89caf0.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/categoryGroups/typeOfProject--5364c36e-2029-4759-94b6-30b2ed89caf0.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/about--24121422-85c6-4fb0-b343-a697c84ddfa2.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/about--24121422-85c6-4fb0-b343-a697c84ddfa2.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/contact--a762d833-6fd5-4422-a088-59edfa9f8e4c.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/contact--a762d833-6fd5-4422-a088-59edfa9f8e4c.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/directors--8bd9cf9b-666a-4731-bb66-ce85805aaa4c.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/directors--8bd9cf9b-666a-4731-bb66-ce85805aaa4c.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/home--988e0807-e76b-4064-8f2f-905c8828097c.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/home--988e0807-e76b-4064-8f2f-905c8828097c.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/notes--dfab18df-1b83-4193-9dd1-67eb5cc7ff83.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/notes--dfab18df-1b83-4193-9dd1-67eb5cc7ff83.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/press--5c534aa3-6d92-42ec-8429-26ede5eab92b.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/press--5c534aa3-6d92-42ec-8429-26ede5eab92b.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/privacyPolicy--c900038a-ee1d-4ba1-afc1-e44173a44418.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/privacyPolicy--c900038a-ee1d-4ba1-afc1-e44173a44418.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/producers--46128a99-13e8-4851-8cd6-aed9bed72a5b.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/producers--46128a99-13e8-4851-8cd6-aed9bed72a5b.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/projects--ea6db327-fa3f-4b4b-880b-12d3356328aa.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/projects--ea6db327-fa3f-4b4b-880b-12d3356328aa.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/series--7e643ca3-1917-41b3-9efb-71e42fff79b3.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/series--7e643ca3-1917-41b3-9efb-71e42fff79b3.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/terms--b90c1a49-ccce-4075-8492-a2c3ee7419ec.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/terms--b90c1a49-ccce-4075-8492-a2c3ee7419ec.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/work--6fe5a1fc-e26f-41c4-8492-781ccd8cb7b5.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/work--6fe5a1fc-e26f-41c4-8492-781ccd8cb7b5.yaml",
-		"oF": 0
-		},
-	"/config/project/fieldGroups/04b3b4bb-5a04-4d55-a1fc-39e4312e4e96.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fieldGroups/04b3b4bb-5a04-4d55-a1fc-39e4312e4e96.yaml",
-		"oF": 0
-		},
-	"/config/project/fieldGroups/0da37b13-2d77-4500-8d1f-377fbac8ae30.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fieldGroups/0da37b13-2d77-4500-8d1f-377fbac8ae30.yaml",
-		"oF": 0
-		},
-	"/config/project/fieldGroups/3fc14f6c-ba8d-46bd-b8fc-759a5beed7f4.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fieldGroups/3fc14f6c-ba8d-46bd-b8fc-759a5beed7f4.yaml",
-		"oF": 0
-		},
-	"/config/project/fieldGroups/aea8f7d7-487c-42ed-8af7-a33fd4a416e0.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fieldGroups/aea8f7d7-487c-42ed-8af7-a33fd4a416e0.yaml",
-		"oF": 0
-		},
-	"/config/project/fieldGroups/afa397d2-521d-48d6-acb2-4d4e53b2fd50.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fieldGroups/afa397d2-521d-48d6-acb2-4d4e53b2fd50.yaml",
-		"oF": 0
-		},
-	"/config/project/fieldGroups/d5118fb5-2e06-44ac-aefe-71cece0c7cc0.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fieldGroups/d5118fb5-2e06-44ac-aefe-71cece0c7cc0.yaml",
-		"oF": 0
-		},
-	"/config/project/fieldGroups/dfe9b0d4-736b-4fbd-a584-88932d8d56a9.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fieldGroups/dfe9b0d4-736b-4fbd-a584-88932d8d56a9.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/address--409d5bc8-1276-496f-bbad-9a30d211fa27.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/address--409d5bc8-1276-496f-bbad-9a30d211fa27.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/addressLink--8e91579d-875f-40a0-b1e3-807d78d8ce75.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/addressLink--8e91579d-875f-40a0-b1e3-807d78d8ce75.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/agency--872a496d-1bf8-49a8-bdf6-8c182f0e2298.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/agency--872a496d-1bf8-49a8-bdf6-8c182f0e2298.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/aspectRatio--1c4d0151-1407-47f3-8ac7-11bf44598233.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/aspectRatio--1c4d0151-1407-47f3-8ac7-11bf44598233.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/awards--2ad113e3-a68b-4fc9-8d9c-ac2f8186714f.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/awards--2ad113e3-a68b-4fc9-8d9c-ac2f8186714f.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/caption--d977e3c9-4f15-497a-b9a5-cc6806a80c25.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/caption--d977e3c9-4f15-497a-b9a5-cc6806a80c25.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/carousel--372a5521-190d-44d5-83ad-8737b49bdbdd.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/carousel--372a5521-190d-44d5-83ad-8737b49bdbdd.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/client--0e30375a-441c-40da-ac14-be5255445806.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/client--0e30375a-441c-40da-ac14-be5255445806.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/clientCopy--ca761e7e-5390-4579-978a-bb6f7a552e10.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/clientCopy--ca761e7e-5390-4579-978a-bb6f7a552e10.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/clients--7cdae4e9-4b96-4826-95c8-c73b76c22d70.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/clients--7cdae4e9-4b96-4826-95c8-c73b76c22d70.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/companyName--8c2fac74-143d-4954-ac3c-54072de3d3eb.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/companyName--8c2fac74-143d-4954-ac3c-54072de3d3eb.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/companyNumber--5a693d50-6a94-49f1-8731-0b0ef32a4e00.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/companyNumber--5a693d50-6a94-49f1-8731-0b0ef32a4e00.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/companyRegisteredOffice--7afeb1d0-6d51-4b74-9d05-07c2b106823e.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/companyRegisteredOffice--7afeb1d0-6d51-4b74-9d05-07c2b106823e.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/companyVat--86d534a2-9b4d-40a5-9c64-36089b02afd9.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/companyVat--86d534a2-9b4d-40a5-9c64-36089b02afd9.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/contacts--4fea65b6-ace0-410c-b9b0-006dfb431f65.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/contacts--4fea65b6-ace0-410c-b9b0-006dfb431f65.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/copy--cc7a7777-17c5-45ef-829d-9b277cb85134.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/copy--cc7a7777-17c5-45ef-829d-9b277cb85134.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/detail--a217b31b-0447-45c7-b27f-2a37ed6bf1cf.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/detail--a217b31b-0447-45c7-b27f-2a37ed6bf1cf.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/director--b590bffb-b895-4106-ad8a-5aef5a0624aa.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/director--b590bffb-b895-4106-ad8a-5aef5a0624aa.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/domain--96a0b865-b5f2-408f-9fc4-4d8732fb450a.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/domain--96a0b865-b5f2-408f-9fc4-4d8732fb450a.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/email--9ccc8465-065e-43d4-a80c-3659fb4e3376.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/email--9ccc8465-065e-43d4-a80c-3659fb4e3376.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/hero--49039979-9733-4e1e-bb92-be4e36d5c222.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/hero--49039979-9733-4e1e-bb92-be4e36d5c222.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/image--04ab3c60-f325-48ea-bf96-347befb870e0.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/image--04ab3c60-f325-48ea-bf96-347befb870e0.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/images--b4c9ab1f-2382-42ed-a624-d4a42f1389a7.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/images--b4c9ab1f-2382-42ed-a624-d4a42f1389a7.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/length--51fa44d3-fd4e-4982-b45a-99be00c2c501.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/length--51fa44d3-fd4e-4982-b45a-99be00c2c501.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/people--c6a6830e-daad-4ac0-b66c-2f7628175116.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/people--c6a6830e-daad-4ac0-b66c-2f7628175116.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/phoneNumber--e749f839-9bf1-45c4-95a0-85b305edeaa0.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/phoneNumber--e749f839-9bf1-45c4-95a0-85b305edeaa0.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/previewVideo--a2a8616b-6624-41af-93a2-0da771d6b113.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/previewVideo--a2a8616b-6624-41af-93a2-0da771d6b113.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/producer--30f03610-28d7-4b19-a068-e7a8273b06f2.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/producer--30f03610-28d7-4b19-a068-e7a8273b06f2.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/projects--2d0f3f24-2560-4fff-8d6b-79339340c49a.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/projects--2d0f3f24-2560-4fff-8d6b-79339340c49a.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/recognition--af242e8f-8a13-4b63-86e6-1520c7607635.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/recognition--af242e8f-8a13-4b63-86e6-1520c7607635.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/recognitionCopy--dfb8e5ab-3e5c-4f73-9c46-93aa958fdff3.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/recognitionCopy--dfb8e5ab-3e5c-4f73-9c46-93aa958fdff3.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/seoAnalytics--1b93a0c4-28cb-4536-935a-899b559bf95d.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/seoAnalytics--1b93a0c4-28cb-4536-935a-899b559bf95d.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/seoDescription--fe83906d-6f96-4f77-9151-41326628a78d.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/seoDescription--fe83906d-6f96-4f77-9151-41326628a78d.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/seoImage--1abe3543-0a12-4298-ad7d-1a93ca2d280c.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/seoImage--1abe3543-0a12-4298-ad7d-1a93ca2d280c.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/seoTitle--dfb201c1-5d86-40c2-8ef8-8a447a607828.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/seoTitle--dfb201c1-5d86-40c2-8ef8-8a447a607828.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/shortAddress--fb50c747-d951-4667-8094-78a8c3eb8d23.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/shortAddress--fb50c747-d951-4667-8094-78a8c3eb8d23.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/simpleCopy--466c1699-649f-4c4f-bdf1-24d97dcda1ce.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/simpleCopy--466c1699-649f-4c4f-bdf1-24d97dcda1ce.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/socials--177d26d8-196e-40fa-80c8-8dc29f7a4139.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/socials--177d26d8-196e-40fa-80c8-8dc29f7a4139.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/typeOfProject--64e51b90-5f2d-49a4-8a17-c6a5ff230049.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/typeOfProject--64e51b90-5f2d-49a4-8a17-c6a5ff230049.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/video--d7b767e3-b7c2-4a02-a2c2-556c9c92ff1b.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/video--d7b767e3-b7c2-4a02-a2c2-556c9c92ff1b.yaml",
-		"oF": 0
-		},
-	"/config/project/globalSets/company--eb95ecf7-1541-43bb-b0ee-c1cd6606d097.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/globalSets/company--eb95ecf7-1541-43bb-b0ee-c1cd6606d097.yaml",
-		"oF": 0
-		},
-	"/config/project/globalSets/seo--a107392e-6bfa-4c3c-aee9-6abe5b17e9e7.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/globalSets/seo--a107392e-6bfa-4c3c-aee9-6abe5b17e9e7.yaml",
-		"oF": 0
-		},
-	"/config/project/globalSets/site--1ec2a87c-017f-4647-8f1e-0d21e61cc0fd.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/globalSets/site--1ec2a87c-017f-4647-8f1e-0d21e61cc0fd.yaml",
-		"oF": 0
-		},
-	"/config/project/globalSets/socials--0616a60f-0742-4138-beeb-f8f16f67d0ad.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/globalSets/socials--0616a60f-0742-4138-beeb-f8f16f67d0ad.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/award--c3217c13-9884-471a-a860-3443c47a9b5a.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/award--c3217c13-9884-471a-a860-3443c47a9b5a.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/client--b33f42da-db22-427c-8482-aac01556e6db.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/client--b33f42da-db22-427c-8482-aac01556e6db.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/contact--7c8fc680-6aaf-4c12-aa1e-800102456830.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/contact--7c8fc680-6aaf-4c12-aa1e-800102456830.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/detail--eca191f4-90ee-49b4-900f-c24192b1d1d3.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/detail--eca191f4-90ee-49b4-900f-c24192b1d1d3.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/facebook--78f28cf7-5a64-4086-bf54-50021e0373af.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/facebook--78f28cf7-5a64-4086-bf54-50021e0373af.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/hero--24f37676-98b4-4617-92a7-718e6f4c202f.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/hero--24f37676-98b4-4617-92a7-718e6f4c202f.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/images--39af2af9-c3b3-4914-8813-782b23812541.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/images--39af2af9-c3b3-4914-8813-782b23812541.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/imdb--ed8965ab-829a-4b9d-97b2-cdf050e6e556.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/imdb--ed8965ab-829a-4b9d-97b2-cdf050e6e556.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/instagram--9f41361a-44ef-4536-81b0-867caeb4a8e9.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/instagram--9f41361a-44ef-4536-81b0-867caeb4a8e9.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/person--355e5fc1-0486-4caf-b012-58543b0a474d.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/person--355e5fc1-0486-4caf-b012-58543b0a474d.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/project--25dc3ebb-a3ff-4275-a1c3-d9d3d3807911.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/project--25dc3ebb-a3ff-4275-a1c3-d9d3d3807911.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/subheader--e831bec0-22d3-4d84-b986-7663cdb159bd.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/subheader--e831bec0-22d3-4d84-b986-7663cdb159bd.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/twitter--8d5ef6c6-820e-4020-9189-486b1dc4210a.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/twitter--8d5ef6c6-820e-4020-9189-486b1dc4210a.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/vimeo--c47aa106-bff2-4b9b-a157-7cc8f8ba1800.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/vimeo--c47aa106-bff2-4b9b-a157-7cc8f8ba1800.yaml",
-		"oF": 0
-		},
-	"/config/project/project.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/project.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/about--94480a54-8503-4138-b351-a44abb1952d6.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/about--94480a54-8503-4138-b351-a44abb1952d6.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/contact--65923fc6-a652-4d40-88b1-c54766df929e.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/contact--65923fc6-a652-4d40-88b1-c54766df929e.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/directors--b7517307-0a83-443e-a91c-fcadf20ff746.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/directors--b7517307-0a83-443e-a91c-fcadf20ff746.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/home--8ae5cd1b-a7ec-4968-94f8-e41aec2b241d.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/home--8ae5cd1b-a7ec-4968-94f8-e41aec2b241d.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/notes--fafd081a-fdeb-4537-94ea-90f861360a94.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/notes--fafd081a-fdeb-4537-94ea-90f861360a94.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/press--0eadb8fa-9134-426a-bc23-c8aae901d86e.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/press--0eadb8fa-9134-426a-bc23-c8aae901d86e.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/privacyPolicy--05857c3a-0daf-412c-a320-780824b26ff5.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/privacyPolicy--05857c3a-0daf-412c-a320-780824b26ff5.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/producers--5c2fa1b4-b6c4-4857-bfb3-0a7c2ef1d908.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/producers--5c2fa1b4-b6c4-4857-bfb3-0a7c2ef1d908.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/projects--32174234-e8c3-40d4-9725-77ff2bd2366a.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/projects--32174234-e8c3-40d4-9725-77ff2bd2366a.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/terms--bfd43785-517b-421f-b68e-a7411a40fe44.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/terms--bfd43785-517b-421f-b68e-a7411a40fe44.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/work--a99673a9-d571-4be3-ad83-d9bc203be355.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/work--a99673a9-d571-4be3-ad83-d9bc203be355.yaml",
-		"oF": 0
-		},
-	"/config/project/siteGroups/6ff0064a-f99e-4369-b70b-9dbe09620a22.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/siteGroups/6ff0064a-f99e-4369-b70b-9dbe09620a22.yaml",
-		"oF": 0
-		},
-	"/config/project/sites/default--8a2043ba-0ab6-482c-bb78-9c06b90e1891.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sites/default--8a2043ba-0ab6-482c-bb78-9c06b90e1891.yaml",
-		"oF": 0
-		},
-	"/config/project/volumes/uploads--244f7440-a428-4998-8c23-00991784b369.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/volumes/uploads--244f7440-a428-4998-8c23-00991784b369.yaml",
 		"oF": 0
 		},
 	"/config/redactor/Custom.json": {
@@ -1620,765 +876,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/ssr-window/min/ssr-window.esm-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/breakpoints/getBreakpoint.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/breakpoints/min/getBreakpoint-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/breakpoints/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/breakpoints/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/breakpoints/setBreakpoint.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/breakpoints/min/setBreakpoint-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/check-overflow/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/check-overflow/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/classes/addClasses.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/classes/min/addClasses-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/classes/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/classes/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/classes/removeClasses.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/classes/min/removeClasses-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/core-class.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/min/core-class-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/defaults.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/min/defaults-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/events-emitter.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/min/events-emitter-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/events/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/events/onClick.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/onClick-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/events/onResize.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/onResize-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/events/onScroll.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/onScroll-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/events/onTouchEnd.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/onTouchEnd-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/events/onTouchMove.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/onTouchMove-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/events/onTouchStart.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/onTouchStart-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/grab-cursor/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/grab-cursor/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/grab-cursor/setGrabCursor.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/grab-cursor/min/setGrabCursor-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/grab-cursor/unsetGrabCursor.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/grab-cursor/min/unsetGrabCursor-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/images/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/images/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/images/loadImage.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/images/min/loadImage-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/images/preloadImages.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/images/min/preloadImages-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/loop/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/loop/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/loop/loopCreate.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/loop/min/loopCreate-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/loop/loopDestroy.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/loop/min/loopDestroy-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/loop/loopFix.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/loop/min/loopFix-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/manipulation/addSlide.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/manipulation/min/addSlide-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/manipulation/appendSlide.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/manipulation/min/appendSlide-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/manipulation/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/manipulation/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/manipulation/prependSlide.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/manipulation/min/prependSlide-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/manipulation/removeAllSlides.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/manipulation/min/removeAllSlides-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/manipulation/removeSlide.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/manipulation/min/removeSlide-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/modular.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/min/modular-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/slide/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/slide/slideNext.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slideNext-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/slide/slidePrev.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slidePrev-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/slide/slideReset.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slideReset-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/slide/slideTo.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slideTo-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/slide/slideToClickedSlide.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slideToClickedSlide-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/slide/slideToClosest.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slideToClosest-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/slide/slideToLoop.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slideToLoop-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/transition/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/transition/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/transition/setTransition.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/transition/min/setTransition-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/transition/transitionEnd.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/transition/min/transitionEnd-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/transition/transitionStart.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/transition/min/transitionStart-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/translate/getTranslate.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/translate/min/getTranslate-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/translate/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/translate/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/translate/maxTranslate.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/translate/min/maxTranslate-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/translate/minTranslate.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/translate/min/minTranslate-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/translate/setTranslate.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/translate/min/setTranslate-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/translate/translateTo.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/translate/min/translateTo-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateActiveIndex.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateActiveIndex-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateAutoHeight.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateAutoHeight-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateClickedSlide.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateClickedSlide-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateProgress.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateProgress-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateSize.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateSize-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateSlides.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateSlides-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateSlidesClasses.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateSlidesClasses-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateSlidesOffset.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateSlidesOffset-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/components/core/update/updateSlidesProgress.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateSlidesProgress-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/modules/observer/observer.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/modules/observer/min/observer-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/modules/resize/resize.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/modules/resize/min/resize-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/utils/dom.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/utils/min/dom-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/utils/get-browser.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/utils/min/get-browser-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/utils/get-device.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/utils/min/get-device-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/utils/get-support.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/utils/min/get-support-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/swiper/bundle/../esm/utils/utils.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/utils/min/utils-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -3865,7 +2362,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/android-chrome-512x512.png": {
 		"ft": 32768,
@@ -3876,7 +2375,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/apple-touch-icon.png": {
 		"ft": 32768,
@@ -3887,7 +2388,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/browserconfig.xml": {
 		"cB": 0,
@@ -3906,7 +2409,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/favicon-32x32.png": {
 		"ft": 32768,
@@ -3917,7 +2422,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/favicon.ico": {
 		"cB": 0,
@@ -3936,7 +2443,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/mstile-150x150.png": {
 		"ft": 32768,
@@ -3947,7 +2456,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/mstile-310x150.png": {
 		"ft": 32768,
@@ -3958,7 +2469,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/mstile-310x310.png": {
 		"ft": 32768,
@@ -3969,7 +2482,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/mstile-70x70.png": {
 		"ft": 32768,
@@ -3980,7 +2495,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/favicons/safari-pinned-tab.svg": {
 		"ft": 2097152,
@@ -4099,7 +2616,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/img/arrow-left.svg": {
 		"ft": 2097152,
@@ -4120,7 +2639,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/img/arrow-left@3x.png": {
 		"ft": 32768,
@@ -4131,7 +2652,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/img/arrow-right.png": {
 		"ft": 32768,
@@ -4142,7 +2665,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/img/arrow-right.svg": {
 		"ft": 2097152,
@@ -4163,7 +2688,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/img/arrow-right@3x.png": {
 		"ft": 32768,
@@ -4174,7 +2701,9 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/web/assets/js/app.js": {
 		"bF": 4,
@@ -5282,8 +3811,7 @@
 			"optionString": "{'before': true, 'after': true}"
 			},
 		"block-scoped-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"block-spacing": {
 			"active": 0,
@@ -5338,24 +3866,20 @@
 			"optionString": "'that'"
 			},
 		"constructor-super": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"curly": {
 			"active": 0,
 			"optionString": "'all'"
 			},
 		"default-case": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"default-case-last": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"default-param-last": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"dot-location": {
 			"active": 0,
@@ -5374,8 +3898,7 @@
 			"optionString": "'always', {'null': 'always'}"
 			},
 		"for-direction": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"func-call-spacing": {
 			"active": 0,
@@ -5406,16 +3929,14 @@
 			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"grouped-accessor-pairs": {
 			"active": 0,
 			"optionString": "'anyOrder'"
 			},
 		"guard-for-in": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"handle-callback-err": {
 			"active": 0,
@@ -5530,44 +4051,35 @@
 			"optionString": "{'ignoreChainWithDepth': 2}"
 			},
 		"no-alert": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-array-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-async-promise-executor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-await-in-loop": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
 			},
 		"no-buffer-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-caller": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-case-declarations": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-class-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-compare-neg-zero": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-cond-assign": {
 			"active": 1,
@@ -5582,124 +4094,101 @@
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-constant-condition": {
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
 		"no-constructor-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-continue": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-control-regex": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-debugger": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-delete-var": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-div-regex": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-dupe-args": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-dupe-class-members": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-dupe-else-if": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-dupe-keys": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-duplicate-imports": {
 			"active": 0,
 			"optionString": "{'includeExports': false}"
 			},
 		"no-else-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-empty": {
 			"active": 1,
 			"optionString": "{'allowEmptyCatch': false}"
 			},
 		"no-empty-character-class": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-empty-function": {
 			"active": 0,
 			"optionString": "{'allow': []}"
 			},
 		"no-empty-pattern": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-eq-null": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-eval": {
 			"active": 0,
 			"optionString": "{'allowIndirect': false}"
 			},
 		"no-ex-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-extend-native": {
 			"active": 0,
 			"optionString": "{'exceptions': []}"
 			},
 		"no-extra-bind": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-extra-boolean-cast": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-extra-labels": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-extra-parens": {
 			"active": 1,
 			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false}"
 			},
 		"no-extra-semi": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-fallthrough": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-floating-decimal": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-func-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-global-assign": {
 			"active": 0,
@@ -5710,20 +4199,16 @@
 			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
 			},
 		"no-implicit-globals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-implied-eval": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-import-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-inline-comments": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-inner-declarations": {
 			"active": 1,
@@ -5742,40 +4227,33 @@
 			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
 			},
 		"no-iterator": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-label-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-labels": {
 			"active": 0,
 			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
 			},
 		"no-lone-blocks": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-lonely-if": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-loop-func": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-loss-of-precision": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
 			},
 		"no-misleading-character-class": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-mixed-operators": {
 			"active": 0,
@@ -5790,100 +4268,84 @@
 			"optionString": ""
 			},
 		"no-multi-assign": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
 			},
 		"no-multi-str": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-multiple-empty-lines": {
 			"active": 0,
 			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
 			},
 		"no-negated-condition": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-nested-ternary": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-func": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-object": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-require": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-symbol": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-new-wrappers": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-obj-calls": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-octal": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-octal-escape": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-param-reassign": {
 			"active": 0,
 			"optionString": "{'props': false}"
 			},
 		"no-path-concat": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-plusplus": {
 			"active": 0,
 			"optionString": "{'allowForLoopAfterthoughts': false}"
 			},
 		"no-process-env": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-process-exit": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-promise-executor-return": {
+			"active": 0
 			},
 		"no-proto": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-prototype-builtins": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
 			},
 		"no-regex-spaces": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-restricted-exports": {
 			"active": 0,
@@ -5894,8 +4356,7 @@
 			"optionString": "'event', 'fdescribe'"
 			},
 		"no-restricted-imports": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-restricted-modules": {
 			"active": 0,
@@ -5914,40 +4375,33 @@
 			"optionString": "'except-parens'"
 			},
 		"no-return-await": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-script-url": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-self-assign": {
 			"active": 1,
 			"optionString": "{'props': false}"
 			},
 		"no-self-compare": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-sequences": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-setter-return": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
 			},
 		"no-shadow-restricted-names": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-sparse-arrays": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-sync": {
 			"active": 0,
@@ -5958,20 +4412,16 @@
 			"optionString": ""
 			},
 		"no-template-curly-in-string": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-ternary": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-this-before-super": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-throw-literal": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-trailing-spaces": {
 			"active": 0,
@@ -5982,36 +4432,34 @@
 			"optionString": "{'typeof': false}"
 			},
 		"no-undef-init": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-undefined": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-underscore-dangle": {
 			"active": 0,
 			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false}"
 			},
 		"no-unexpected-multiline": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unmodified-loop-condition": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-unneeded-ternary": {
 			"active": 0,
 			"optionString": "{'defaultAssignment': true}"
 			},
 		"no-unreachable": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-unreachable-loop": {
+			"active": 0,
+			"optionString": "{'ignore': []}"
 			},
 		"no-unsafe-finally": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unsafe-negation": {
 			"active": 0,
@@ -6022,8 +4470,7 @@
 			"optionString": "{'allowShortCircuit': false, 'allowTernary': false}"
 			},
 		"no-unused-labels": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unused-vars": {
 			"active": 1,
@@ -6034,44 +4481,36 @@
 			"optionString": "{'functions': true, 'classes': true}"
 			},
 		"no-useless-backreference": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-call": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-catch": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-computed-key": {
 			"active": 1,
 			"optionString": ""
 			},
 		"no-useless-concat": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-escape": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-rename": {
 			"active": 0,
 			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
 			},
 		"no-useless-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-void": {
 			"active": 0,
@@ -6082,12 +4521,10 @@
 			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
 			},
 		"no-whitespace-before-property": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-with": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"nonblock-statement-body-position": {
 			"active": 0,
@@ -6134,8 +4571,7 @@
 			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
 			},
 		"prefer-arrow-callback": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-const": {
 			"active": 0,
@@ -6146,40 +4582,32 @@
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-exponentiation-operator": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-named-capture-group": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-numeric-literals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-object-spread": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-regex-literals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-rest-params": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-spread": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-template": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"quote-props": {
 			"active": 0,
@@ -6194,24 +4622,20 @@
 			"optionString": "'always'"
 			},
 		"require-atomic-updates": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-await": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false}}"
 			},
 		"require-unicode-regexp": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-yield": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"rest-spread-spacing": {
 			"active": 0,
@@ -6274,8 +4698,7 @@
 			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"template-curly-spacing": {
 			"active": 0,
@@ -6302,16 +4725,14 @@
 			"optionString": "{'requireStringLiterals': true}"
 			},
 		"vars-on-top": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"wrap-iife": {
 			"active": 0,
 			"optionString": "'outside'"
 			},
 		"wrap-regex": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"yield-star-spacing": {
 			"active": 0,
@@ -6706,7 +5127,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsHAML": {
 		"autoOutputAction": 0,
@@ -6732,7 +5155,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"outputFormat": 0,
-		"quality": 100
+		"quality": 100,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -6824,7 +5249,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"optimizerType": 1,
-		"quality": 100
+		"quality": 100,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -7236,6 +5663,8 @@
 		},
 	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$",
+	"webpPresets": {
+		},
 	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"
