@@ -93,6 +93,16 @@ tippy('[data-tippy-content]', {
   plugins: [followCursor]
 })
 
+// 3. Navigation Background
+// -------------
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
 // 5. Carousel
 // -----------
 

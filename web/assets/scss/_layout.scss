@@ -650,18 +650,18 @@ z-index: -1;
 */
 
 
-.contact nav, .about nav, .home-two nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 210;
-  background-color: transparent;
-  @include links ($white, $white);
-  .hamburger span.bar {
-  background-color: $white;
-  }
-}
+// .contact nav, .about nav, .home-two nav {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 210;
+//   background-color: transparent;
+//   @include links ($white, $white);
+//   .hamburger span.bar {
+//   background-color: $white;
+//   }
+// }
 
 .opacity-50 {
   @include opacity(0.5);
@@ -791,4 +791,30 @@ left: 0;
 width: 100%;
 height: 100%;
 background: rgba($black, 0.25);
+}
+
+
+nav {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  @include links($white, $secondary-color);
+  color: $white;
+  transition: all 200ms linear;
+  padding: 2rem;
+  .hamburger span.bar {
+    background-color: $white;
+  }
+}
+
+
+nav.scrolled {
+  @include links($black, $dark-gray);
+  transition: all 200ms linear;
+  background-color: rgba($white, 0.98) !important;
+  .hamburger span.bar {
+    background-color: $black;
+  }
 }

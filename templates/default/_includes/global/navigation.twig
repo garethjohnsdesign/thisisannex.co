@@ -1,17 +1,5 @@
-<!-- Mobile Navigation -->
-{#
-<nav class="grid-x grid-padding-y align-center hide-for-large" id="swup-header">
-  <div class="shrink cell">
-    <a class="logo text-uppercase letter-spacing--loose" type="button" aria-label="Navigation" data-toggle="overlayNavigation">
-    {{ currentSite.name }}
-    </a>
-  </div>
-</nav>
-#}
-<!-- End Mobile Navigation -->
-
 <!-- Desktop Navigation -->
-<nav class="grid-x grid-padding-x grid-padding-y align-justify align-middle" id="swup-header">
+<div class="grid-x align-justify align-middle" id="swup-header">
 
   <div class="small-3 medium-4 cell align-middle">
     <button class="hamburger hamburger--criss-cross" id="menuBar" type="button" data-toggle="menuBar offCanvasLeft" data-toggler="active">
@@ -32,7 +20,6 @@
   </div>
 
   <div class="small-3 medium-4 cell align-middle text-right">
-{#     <a href="/contact"><svg class="icon icon-search"><use xlink:href="/assets/icons/symbol-defs.svg#icon-search"></use></svg></a> #}
   <ul class="menu simple align-right">
      {% for block in socials.socials.all() %}
       {% switch block.type %}
@@ -44,5 +31,5 @@
       {% endfor %}
     </ul>
   </div>
-</nav>
+</div>
 <!-- End Desktop Navigation -->
