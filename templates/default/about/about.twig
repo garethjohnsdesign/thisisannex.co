@@ -42,9 +42,9 @@
       {{entry.clientCopy | markdown}}
       {% endif %}
       <ul class="menu align-center">
-        {% for client in entry.clients.all()  %}
-        {% if client.domain %}
-        <li><a href="{{ client.domain }}">{{ client.client }}</a></li>
+        {% for client in entry.clients  %}
+        {% if client.link %}
+        <li><a href="{{ client.link }}">{{ client.client }}</a></li>
         {% else %}
         <li class="menu-text">{{ client.client }}</li>
         {% endif %}

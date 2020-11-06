@@ -1,14 +1,57 @@
-contentColumnType: string
+contentColumnType: text
 fieldGroup: 3fc14f6c-ba8d-46bd-b8fc-759a5beed7f4
 handle: clients
 instructions: ''
 name: Clients
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_clients_1}}'
-  maxBlocks: ''
-  minBlocks: ''
-  propagationMethod: all
+  addRowLabel: 'Add a row'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Client
+            -
+              - handle
+              - client
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Link
+            -
+              - handle
+              - link
+            -
+              - width
+              - ''
+            -
+              - type
+              - url
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+        -
+          - col2
+          - ''
+  maxRows: ''
+  minRows: ''
 translationKeyFormat: null
-translationMethod: site
-type: craft\fields\Matrix
+translationMethod: none
+type: craft\fields\Table

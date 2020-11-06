@@ -2329,6 +2329,14 @@
 		"oAP": "/templates/default/projects/_types/series.twig",
 		"oF": 0
 		},
+	"/templates/default/work/work.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/work/work.twig",
+		"oF": 0
+		},
 	"/vendor": {
 		"ft": 65536,
 		"oA": 1,

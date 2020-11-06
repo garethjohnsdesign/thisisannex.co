@@ -39,62 +39,13 @@
 <!-- Content -->
 <div class="grid-x grid-padding-x grid-padding-y align-center">
 
-<!-- Previous -->
-<div class="auto cell show-for-large project__pagination">
-  {% if prevEntry %}
-  <a href="{{ prevEntry.url }}">
-    <div class="grid-y align-center" style="height: 100%;" data-tippy-content="{{ prevEntry.title }}">
-    </div>
-  </a>
-  {% endif %}
-</div>
-<!-- End Previous -->
-
 <!-- Center -->
 <div class="small-12 medium-10 large-10 xlarge-10 cell">
 
 {% if entry.video | length %}
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 cell text-center">
-    <vime-player playsinline>
-      <vime-vimeo video-id="{{ entry.video|replace('https://vimeo.com/', '') }}"></vime-vimeo>
-      
-
-{#       <vime-ui class="testing" style="z-index:1"><h1 class="white">{{ entry.title }}</h1><div class="text-uppercase small letter-spacing--loose white">{{entry.client}}</div></vime-ui> #}
-
-
-
-      <vime-default-ui no-controls active-duration="50">
-
-<vime-poster>
-<div class="overlay-wrapper">
-<div class="grid-y height-100 align-center">
-  <div class="shrink cell text-center">
-  <h1 class="white">{{ entry.title }}</h1><div class="text-uppercase small letter-spacing--loose white">{{entry.client}}</div>
-  </div>
-</div>
-</div>
-</vime-poster>
-{#
-      <vime-controls 
-      active-duration="50"
-      hideOnMouseLeave="true"
-      pin="center">
-      <vime-click-to-play></vime-click-to-play>
-      <div><h1 class="white">{{ entry.title }}</h1><div class="text-uppercase small letter-spacing--loose white">{{entry.client}}</div></div>
-      </vime-controls>
-#}
-      
-      
-      <vime-controls full-width>
-      <vime-playback-control hide-tooltip></vime-playback-control>
-      <vime-volume-control hide-tooltip></vime-volume-control>
-      <vime-control-spacer></vime-control-spacer>
-      <vime-fullscreen-control hide-tooltip></vime-fullscreen-control>
-      </vime-controls>
-      
-      </vime-default-ui>
-    </vime-player>
+  <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ entry.video }}"></div>
   </div>
 </div>
 {% elseif entry.image | length %}
@@ -152,18 +103,6 @@
       
 </div>
 <!-- End Center -->
-
-<!-- Next -->
-<div class="auto cell show-for-large project__pagination">
-  {% if nextEntry %}
-  <a href="{{ nextEntry.url }}">
-    <div class="grid-y align-center" style="height: 100%;" data-tippy-content="{{ nextEntry.title }}">
-{#       <div class="shrink cell text-center"><svg class="icon icon-arrows icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></div> #}
-    </div>
-  </a>
-  {% endif %}
-</div>
-<!-- End Next -->
 
 </div>   
 <!-- End Content -->

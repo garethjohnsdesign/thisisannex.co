@@ -19,8 +19,10 @@
     </div>
   </div>
   <div class="margin-top-1 text-uppercase text-center small black" data-aos="fade-in" data-aos-delay="150">{{ project.title }} — {{ project.client }}</div>
+  {% if project.director|length %}
   {% set director = project.director.one() %}
   <div class="margin-top-0 text-uppercase text-center small dark-gray" data-aos="fade-in" data-aos-delay="200">{{ director.title }}</div>
+  {% endif %}
   {% else %}
   <div class="image--24-1">
     <div class="grid-y content align-center-middle" style="height: 100%">

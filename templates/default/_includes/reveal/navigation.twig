@@ -3,11 +3,7 @@
     <div class="shrink cell">
 
       <ul class="vertical menu text-center">
-        {% nav category in craft.categories.group('typeOfProject').all() %}
-          <li>
-           <a href="{{ category.url }}" class="text-uppercase h4" data-toggle="overlayNavigation">{{ category.title }}</a>
-          </li>
-        {% endnav %}
+        <li><a href="/work" class="text-uppercase h4" data-toggle="overlayNavigation">Work</a></li>
         <li><a href="/about" class="text-uppercase h4" data-toggle="overlayNavigation">About</a></li>
         <li><a href="/contact" class="text-uppercase h4" data-toggle="overlayNavigation">Contact</a></li>
       </ul>

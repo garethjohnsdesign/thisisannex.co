@@ -820,7 +820,7 @@ nav.scrolled {
 }
 
 
-.category nav {
+.work nav {
 position: -webkit-sticky;
 position: sticky;
 top: 0;
@@ -837,7 +837,7 @@ top: 0;
   }
 }
 
-.category nav.scrolled {
+.work nav.scrolled {
   width: 100vw;
   @include links($black, $dark-gray);
   transition: all 200ms linear;

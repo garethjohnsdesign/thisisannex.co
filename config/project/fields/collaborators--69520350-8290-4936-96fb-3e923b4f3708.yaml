@@ -40,7 +40,7 @@ settings:
               - ''
             -
               - type
-              - singleline
+              - url
   defaults:
     -
       __assoc__:

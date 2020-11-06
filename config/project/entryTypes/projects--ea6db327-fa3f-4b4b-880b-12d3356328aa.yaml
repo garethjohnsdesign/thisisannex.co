@@ -93,7 +93,7 @@ fieldLayouts:
             fieldUid: b590bffb-b895-4106-ad8a-5aef5a0624aa
             instructions: ''
             label: ''
-            required: '1'
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -102,7 +102,7 @@ fieldLayouts:
             fieldUid: 30f03610-28d7-4b19-a068-e7a8273b06f2
             instructions: ''
             label: ''
-            required: '1'
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

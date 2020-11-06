@@ -13,16 +13,7 @@
   <div class="grid-x grid-padding-x grid-padding-y padding-bottom-0 align-justify align-middle">
   <div class="shrink cell align-middle padding-bottom-0">
   		<ul class="menu vertical">
-      <li {{ isactive.isActive('projects') }} data-toggle="menuBar offCanvasLeft"><a href="/projects" class="h5 text-uppercase padding-left-0">Projects</a></li>
-{#
-      {% set categoryQuery = craft.categories().group('typeOfProject') %}
-      {% set categories = categoryQuery.all() %}
-      {% nav category in categories %}
-      <li{{ isactive.isActive(category.slug) }}>
-      <a href="{{ category.url }}" class="h5 text-uppercase padding-left-0" data-toggle="menuBar offCanvasLeft">{{ category.title }}</a>
-      </li>
-      {% endnav %}
-#}
+      <li {{ isactive.isActive('work') }} data-toggle="menuBar offCanvasLeft"><a href="/work" class="h5 text-uppercase padding-left-0">Work</a></li>
       <li {{ isactive.isActive('about') }} data-toggle="menuBar offCanvasLeft"><a href="/about" class="h5 text-uppercase padding-left-0">About</a></li>
       <li {{ isactive.isActive('contact') }} data-toggle="menuBar offCanvasLeft"><a href="/contact" class="h5 text-uppercase padding-left-0">Contact</a></li>
       </ul>
