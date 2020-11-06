@@ -373,7 +373,7 @@ h1, .h1 {
   overflow: hidden;
 }
 
-.home-two .image--slide {
+.home .image--slide {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   min-height: 100vh;
@@ -847,3 +847,32 @@ top: 0;
   }
 }
 
+
+.project nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    @include links($black, $secondary-color);
+    color: $white;
+    transition: all 200ms linear;
+    padding: 2rem;
+    .hamburger span.bar {
+      background-color: $black;
+    }
+  }
+  
+  .project nav.scrolled {
+    width: 100vw;
+    @include links($black, $dark-gray);
+    transition: all 200ms linear;
+    background-color: rgba($white, 0.98) !important;
+    .hamburger span.bar {
+      background-color: $black;
+    }
+  }
+  
+  
