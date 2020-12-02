@@ -84,12 +84,33 @@
 
   {% if entry.director|length %}
   {% set director = entry.director.one() %}
-  <div class="margin-top-1 text-uppercase dark-gray"><a href="{{ director.domain }}">More from director</a></div>
+  <div class="margin-top-1 text-uppercase dark-gray"><a href="{{ director.url }}">More from director</a></div>
   {% endif %}
 
   </div>
 </div>
 <!-- End Credits -->
+
+<!-- Related Projects -->
+{# {% set relatedprojects = craft.entries()
+.section('projects')
+.relatedTo(director)
+.limit(3) %}
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-bottom-3 align-center">
+      {% for project in relatedprojects %}
+      <div class="small-12 medium-6 large-4 cell padding-bottom-0">
+        <div class="grid-y align-center height-100">
+          <div class="shrink cell text-center">
+          {% include "_includes/blocks/excerpt" %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div> #}
+<!-- End Related Projects -->
 
 <!-- Mobile Pagination -->
 {% if nextEntry %}

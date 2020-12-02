@@ -51,8 +51,6 @@ $(function() {
         }
       }, 2000)
   });
-
-  
   handleVideoPlay(mySwiper)
 });
 

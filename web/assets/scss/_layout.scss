@@ -301,6 +301,12 @@ h1, .h1 {
   font-size: 120px;
 }
 
+.loading-logo {
+  font-family: $logo;
+  font-size: 96px;
+  text-transform: uppercase;
+}
+
 // 6. Layout
 // ---------
 
@@ -579,6 +585,19 @@ overflow: hidden;
   min-height: 100%;
 //   max-width: 100%;
   width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+
+.swiper-container .video--background {
+  min-width: 100%; 
+  min-height: 100%;
+//   max-width: 100%;
+  width: auto;
   height: auto;
   position: absolute;
   top: 50%;
@@ -586,6 +605,7 @@ overflow: hidden;
   transform: translate(-50%,-50%);
   z-index: -1;
 }
+
 
 
 .excerpt {
@@ -874,5 +894,97 @@ top: 0;
       background-color: $black;
     }
   }
+  
+.directors nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    @include links($black, $secondary-color);
+    color: $white;
+    transition: all 200ms linear;
+    padding: 2rem;
+    .hamburger span.bar {
+      background-color: $black;
+    }
+  }
+  
+  .directors nav.scrolled {
+    width: 100vw;
+    @include links($black, $dark-gray);
+    transition: all 200ms linear;
+    background-color: rgba($white, 0.98) !important;
+    .hamburger span.bar {
+      background-color: $black;
+    }
+  }
+  
+
+.director nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    @include links($black, $secondary-color);
+    color: $white;
+    transition: all 200ms linear;
+    padding: 2rem;
+    .hamburger span.bar {
+      background-color: $black;
+    }
+  }
+  
+  .director nav.scrolled {
+    width: 100vw;
+    @include links($black, $dark-gray);
+    transition: all 200ms linear;
+    background-color: rgba($white, 0.98) !important;
+    .hamburger span.bar {
+      background-color: $black;
+    }
+  }
+
+.contact nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    @include links($white, $secondary-color);
+    color: $white;
+    transition: all 200ms linear;
+    padding: 2rem;
+    .hamburger span.bar {
+      background-color: $white;
+    }
+  }
+  
+  .contact nav.scrolled {
+    width: 100vw;
+    @include links($white, $dark-gray);
+    transition: all 200ms linear;
+    background-color: rgba($black, 0.98) !important;
+    .hamburger span.bar {
+      background-color: $white;
+    }
+  }
+
+.contact .wrapper { 
+  background-color: $black;
+  color: $white;
+  @include links($white, $secondary-color)
+}
+
+.contact { 
+  background-color: $black;
+}
   
   

@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: ed6d389e-08ac-4a43-ac21-195db6f26fd3
+handle: directorProjects
+instructions: ''
+name: 'Director Projects'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:32174234-e8c3-40d4-9725-77ff2bd2366a'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

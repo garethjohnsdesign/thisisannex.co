@@ -13,16 +13,18 @@
 {% extends "_layouts/site" %}
 
 {% block navigation %}
+<div class="wrapper">
 {% include "_includes/global/navigation" %}
+</div>
 {% endblock %}
 
 
-{% block main %}
 
+{% block main %}
+<div class="wrapper">
 <!-- Hero -->
 {% include "_includes/blocks/hero" %}    
 <!-- Hero -->
-
 {# Global Contacts #}
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 cell text-center text-uppercase">
@@ -121,7 +123,7 @@
   </div>
 </div>
 <!-- End Terms and Privacy -->
-
+</div>
 {% endblock %}
 
 

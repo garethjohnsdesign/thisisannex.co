@@ -1,0 +1,72 @@
+{% set bodyClass = 'director' %}
+
+{% if entry.seoTitle|length %}
+{% set seoTitle = entry.seoTitle %}
+{% elseif entry.title|length %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription|length %}
+{% set seoDescription = entry.seoDescription|striptags|raw %}
+{% else %}
+{% set seoDescription = entry.title %}
+{% endif %}
+
+{% if entry.image|length  %}
+{% set asset = entry.image.one() %}
+{% set seoImage = craft.imager.transformImage(asset, { width: 1200, height: 630, dpr: 1, position: asset.getFocalPoint() }) %}
+{% endif %}
+
+{# Set parameters for prev/next elements list #}
+{% set params = craft.entries
+.section('projects')
+.relatedTo(entry.typeOfProject)
+%}
+
+{# Get the prev/next elements #}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+
+{% extends "_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+
+{% block main %}
+
+<!-- Content -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-8 cell padding-top-0 padding-bottom-0 text-center">
+    <h1>{{entry.title}}</h1>
+    {{entry.copy}}
+    </div>
+  </div>
+</div> 
+<!-- End Content -->
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-bottom-3 align-center">
+      {% for project in entry.directorProjects.all() %}
+      <div class="small-12 medium-6 cell padding-bottom-0">
+        <div class="grid-y align-center height-100 padding-1">
+          <div class="shrink cell text-center">
+          {% include "_includes/blocks/excerpt" %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
+
+{% block cta %}
+{% include "_includes/global/cta" %}
+{% endblock %}
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}

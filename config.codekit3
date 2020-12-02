@@ -190,17 +190,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getCompositeRect-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js": {
 		"bF": 0,
 		"ft": 64,
@@ -241,17 +230,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getHTMLElementScroll-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getLayoutRect-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -421,127 +399,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/modifiers/applyStyles.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/applyStyles-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/arrow.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/arrow-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/computeStyles.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/computeStyles-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/eventListeners.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/eventListeners-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/flip.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/flip-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/hide.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/hide-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/offset.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/offset-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/popperOffsets.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/popperOffsets-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/preventOverflow.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/preventOverflow-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/popper.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/min/popper-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/computeAutoPlacement-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/utils/computeOffsets.js": {
 		"bF": 0,
 		"ft": 64,
@@ -549,17 +406,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/utils/min/computeOffsets-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/debounce.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/debounce-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -597,17 +443,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/utils/getAltAxis.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getAltAxis-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/utils/getBasePlacement.js": {
 		"bF": 0,
 		"ft": 64,
@@ -641,28 +476,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/utils/getOppositePlacement.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getOppositePlacement-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getOppositeVariationPlacement-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/utils/getVariation.js": {
 		"bF": 0,
 		"ft": 64,
@@ -670,17 +483,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getVariation-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/mergeByName.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/mergeByName-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -696,17 +498,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/utils/orderModifiers.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/orderModifiers-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/utils/rectToClientRect.js": {
 		"bF": 0,
 		"ft": 64,
@@ -718,35 +509,24 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/utils/uniqueBy.js": {
+	"/node_modules/@stencil/core/internal/app-data/./index.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/uniqueBy-min.js",
+		"oAP": "/node_modules/@stencil/core/internal/app-data/./min/index-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/utils/validateModifiers.js": {
+	"/node_modules/@stencil/core/internal/client/./index.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/validateModifiers-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/within.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/within-min.js",
+		"oAP": "/node_modules/@stencil/core/internal/client/./min/index-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -795,13 +575,13 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@vime/core/dist/index.js": {
+	"/node_modules/@vime/core/dist/custom-elements/index.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/@vime/core/dist/min/index-min.js",
+		"oAP": "/node_modules/@vime/core/dist/custom-elements/min/index-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -2249,6 +2029,22 @@
 		"oAP": "/templates/default/cv/index.twig",
 		"oF": 0
 		},
+	"/templates/default/directors/director.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/default/directors/director.twig",
+		"oF": 0
+		},
+	"/templates/default/directors/index.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/directors/index.twig",
+		"oF": 0
+		},
 	"/templates/default/error.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2257,20 +2053,12 @@
 		"oAP": "/templates/default/error.twig",
 		"oF": 0
 		},
-	"/templates/default/home/layout-one.twig": {
+	"/templates/default/home/home.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/default/home/layout-one.twig",
-		"oF": 0
-		},
-	"/templates/default/home/layout-two.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/default/home/layout-two.twig",
+		"oAP": "/templates/default/home/home.twig",
 		"oF": 0
 		},
 	"/templates/default/index.twig": {

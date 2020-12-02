@@ -18,9 +18,44 @@
 
 {% block main %}
 
-{# Hero #}
-{% include "_includes/blocks/hero" %}    
-{# End Hero #}
+{% set block = entry.hero.one() %}
+{% if block %}
+{% if block.image |length %}
+<div class="hero black-background-color">
+{% set image = block.image.one() %}
+<div class="image--hero align-center-middle" {% if not block.video %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}"{% endif %} data-aos="fade-in">
+  
+  <div class="grid-y height-100 align-center content">
+    <div class="shrink cell text-center white">
+
+      <div class="grid-container" data-aos="fade-up">
+        <div class="grid-x grid-padding-x grid-padding-y padding-vertical-3 align-center align-middle">
+          <div class="small-11 medium-10 large-8 cell text-center">
+            {{block.copy}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  {% if block.video %}
+    <video autoplay loop muted playsinline class="video" poster="">
+      <source data-src="{{ block.video }}" type="video/mp4">
+    </video>
+  {% endif %}
+  </div>
+</div>
+{% else %}
+<div class="grid-container" data-aos="fade-in">
+  <div class="grid-x grid-padding-x grid-padding-y padding-vertical-3 align-center align-middle">
+    <div class="small-11 medium-10 large-9 cell text-center">
+      {{block.copy}}
+    </div>
+  </div>
+</div>
+{% endif %} 
+{% endif %}
 
 {# About #}
 <div class="grid-container" data-aos="fade-in">
