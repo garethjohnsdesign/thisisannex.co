@@ -20,7 +20,7 @@
 
 {% block main %}
 
-<div class="swiper-container padding-bottom-2" data-aos="fade-in" data-aos-delay="100">
+<div class="swiper-container margin-bottom-2" data-aos="fade-in" data-aos-delay="100">
   <div class="swiper-wrapper">
     {% for project in carousel %}
     {% set image = project.image.one() %}
@@ -68,6 +68,7 @@
     </div>
     {% endfor %}
   </div>
+  <div class="swiper-hero-progress"></div>
 </div>
 
 <div class="grid-container">

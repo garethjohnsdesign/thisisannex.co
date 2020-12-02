@@ -1005,3 +1005,13 @@ pointer-events: none;
 .plyr--playing {
 z-index: 1;
 }
+
+.swiper-hero-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 5px;
+  background: $light-gray;
+  z-index: 5;
+}
