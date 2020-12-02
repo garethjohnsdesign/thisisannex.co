@@ -30,9 +30,6 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
 $(document).foundation();
 
 
-const player = document.querySelector('vime-player');
-
-
 $(function() {
   let isIOS = /iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
 
@@ -184,7 +181,6 @@ const players = Plyr.setup('.js-player', {
   ratio: '16:9',
   controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen']
 });
-
 
 
 // 5. Hamburger

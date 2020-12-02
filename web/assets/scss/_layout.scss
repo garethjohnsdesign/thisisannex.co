@@ -987,4 +987,21 @@ top: 0;
   background-color: $black;
 }
   
-  
+
+.plyr-wrapper {
+  position: relative;
+}
+
+.overlay {
+height: 100%;
+width: 100%;
+left: 0;
+top: 0;
+position: absolute;
+z-index: 0;
+pointer-events: none;
+}
+
+.plyr--playing {
+z-index: 1;
+}
