@@ -762,13 +762,13 @@ z-index: -1;
     pointer-events: none;
     z-index: 1040;
     position: fixed;
-    background: $white;
-    color: $black;
+    background: $black;
+    color: $white;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%; 
-    opacity: 0;
+    opacity: 1;
     visibility: visible;
     transition: opacity .5s ease-out,transform .5s ease-out;
     transition-delay: 1s;
@@ -788,6 +788,15 @@ z-index: -1;
     transition: transform 800ms;
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 */
+  }
+}
+
+.loader__logo {
+  opacity: 0;
+  transition: opacity 800ms;
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  &.move {
+    opacity: 1;
   }
 }
 
@@ -978,6 +987,12 @@ top: 0;
   }
 
 .contact .wrapper { 
+  background-color: $black;
+  color: $white;
+  @include links($white, $secondary-color)
+}
+
+.contact footer { 
   background-color: $black;
   color: $white;
   @include links($white, $secondary-color)

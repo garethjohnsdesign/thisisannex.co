@@ -296,6 +296,9 @@ if (!Cookies.get('loading')) {
     $(".loader").addClass("loading");
     $('.page--testing').removeClass('testing--hide');
     setTimeout(function(){
+       $(".loader__logo").addClass("move");
+      }, 100);
+    setTimeout(function(){
      $(".loader").addClass("loaded");
      Cookies.set('loading', 'true');
     }, 2500);
