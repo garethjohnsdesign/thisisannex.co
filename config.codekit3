@@ -933,28 +933,6 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getWindow.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getWindow-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/dom-utils/instanceOf.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/instanceOf-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/index.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1105,17 +1083,6 @@
 		"oA": 1,
 		"oAP": "/node_modules/plyr/dist/plyr.min.mjs",
 		"oF": 0
-		},
-	"/node_modules/sal.js/dist/sal.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/sal.js/dist/min/sal-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"/node_modules/ssr-window/ssr-window.esm.js": {
 		"bF": 0,
