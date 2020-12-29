@@ -81,11 +81,7 @@
         <div class="grid-x grid-padding-x grid-padding-y">
           <ul class="menu align-center">
             {% for collaborator in entry.collaborators  %}
-            {% if collaborator.link %}
-            <li><a href="{{ collaborator.link }}">{{ collaborator.collaborator }}</a></li>
-            {% else %}
-            <li class="menu-text">{{ collaborator.collaborator }}</li>
-            {% endif %}
+            <li><a href="{{ collaborator.url }}">{{ collaborator.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
