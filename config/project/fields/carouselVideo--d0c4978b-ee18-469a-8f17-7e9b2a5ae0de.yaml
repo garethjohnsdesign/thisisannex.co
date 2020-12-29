@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: 04b3b4bb-5a04-4d55-a1fc-39e4312e4e96
+handle: carouselVideo
+instructions: ''
+name: 'Carousel Video'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

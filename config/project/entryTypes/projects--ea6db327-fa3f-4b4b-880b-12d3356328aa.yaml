@@ -30,7 +30,7 @@ fieldLayouts:
             fieldUid: 0e30375a-441c-40da-ac14-be5255445806
             instructions: 'Client or brand of project'
             label: ''
-            required: '1'
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -64,6 +64,15 @@ fieldLayouts:
             width: 100
           -
             fieldUid: a2a8616b-6624-41af-93a2-0da771d6b113
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d0c4978b-ee18-469a-8f17-7e9b2a5ae0de
             instructions: null
             label: null
             required: false

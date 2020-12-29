@@ -59,10 +59,14 @@
 
         </div>
 
-        {% if project.previewVideo|length %}
+        {% if project.carouselVideo|length %}
           <video autoplay loop muted class="video--background" poster="">
-            <source data-src="{{ project.previewVideo }}" type="video/mp4" data-aos="fade-in">
-          </video>        
+            <source data-src="{{ project.carouselVideo }}" type="video/mp4">
+          </video>
+        {% elseif project.previewVideo|length %}  
+          <video autoplay loop muted class="video--background" poster="">
+            <source data-src="{{ project.previewVideo }}" type="video/mp4">
+          </video>
         {% endif %}
         </div>
     </div>

@@ -67,55 +67,6 @@
 </div>
 {# End About #}
 
-{# Clients #}
-<div class="grid-container" data-aos="fade-in">
-  <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
-      <div class="dark-gray small text-uppercase letter-spacing--loose padding-bottom-1">Clients</div>
-      {% if entry.clientCopy | length %}
-      {{entry.clientCopy | markdown}}
-      {% endif %}
-      <ul class="menu align-center">
-        {% for client in entry.clients  %}
-        {% if client.link %}
-        <li><a href="{{ client.link }}">{{ client.client }}</a></li>
-        {% else %}
-        <li class="menu-text">{{ client.client }}</li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-      </div>
-    </div>
-  </div>
-{# End Clients #}
-
-{# Team #}
-<div class="grid-container padding-bottom-2" data-aos="fade-in">
-  
-    <div class="grid-x grid-padding-x grid-padding-y align-center">
-      <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center padding-bottom-0">
-        <div class="dark-gray small text-uppercase letter-spacing--loose">Team</div>
-      </div>
-    </div>
-
-    <div class="grid-x grid-padding-x grid-padding-y align-center">
-      <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
-        <div class="grid-x grid-padding-x grid-padding-y">
-          {% for person in entry.people.all()  %}
-            <div class="small-12 medium-4 cell text-center padding-bottom-0">
-            <a href="mailto:{{ person.email }}">
-              <div>{{ person.person }}</div>
-              <div class="dark-gray">{{ person.department }}</div>
-            </a>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-
-</div>
-{# End Team #}
-
 {# Collaborators #}
 <div class="grid-container padding-bottom-2" data-aos="fade-in">
   
@@ -142,8 +93,56 @@
     </div>
 
 </div>
+{# End Collaborators #}
+
+{# Team #}
+<div class="grid-container padding-bottom-2" data-aos="fade-in">
+  
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center padding-bottom-0">
+        <div class="dark-gray small text-uppercase letter-spacing--loose">Team</div>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
+        <div class="grid-x grid-padding-x grid-padding-y align-center">
+          {% for person in entry.people.all()  %}
+            <div class="small-12 medium-4 cell text-center padding-bottom-0">
+            <a href="mailto:{{ person.email }}">
+              <div>{{ person.person }}</div>
+              <div class="dark-gray">{{ person.department }}</div>
+            </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+</div>
 {# End Team #}
 
+{# Clients #}
+<div class="grid-container" data-aos="fade-in">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
+      <div class="dark-gray small text-uppercase letter-spacing--loose padding-bottom-1">Clients</div>
+      {% if entry.clientCopy | length %}
+      {{entry.clientCopy | markdown}}
+      {% endif %}
+      <ul class="menu align-center">
+        {% for client in entry.clients  %}
+        {% if client.link %}
+        <li><a href="{{ client.link }}">{{ client.client }}</a></li>
+        {% else %}
+        <li class="menu-text">{{ client.client }}</li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+{# End Clients #}
 
 {% endblock %}
 
