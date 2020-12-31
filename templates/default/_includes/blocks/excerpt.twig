@@ -2,7 +2,7 @@
   {% set image = project.image.one() %}
   {% if image | length %}
   <div class="light-gray-background-color excerpt">
-    <div class="image--{% if image.aspectRatio.value %}{{ image.aspectRatio.value }}{% else %}24-1{% endif %}" data-interchange="{% if image | length %}{% include "_includes/images/full/16-9/interchange-img-small-12-medium-6" %}{% endif %}" data-aos="fade-in" data-aos-delay="100">
+    <div class="image--{% if image.aspectRatio.value %}{{ image.aspectRatio.value }}{% else %}24-1{% endif %}" data-interchange="{% if image | length %}{% if image.aspectRatio.value %}{% include '_includes/images/full/' ~ image.aspectRatio.value ~ '/interchange-img-small-12-medium-6' %}{% else %}{% include '_includes/images/full/16-9/interchange-img-small-12-medium-6' %}{% endif %}{% endif %}" data-aos="fade-in" data-aos-delay="100">
       
       <div class="grid-y content align-center" style="height: 100%">
         <div class="shrink cell padding-1 white text-center small">

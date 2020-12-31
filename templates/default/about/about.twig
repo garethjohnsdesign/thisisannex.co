@@ -46,7 +46,7 @@
   </div>
 </div>
 {% else %}
-<div class="grid-container" data-aos="fade-up">
+<div class="grid-container" data-aos="fade-in">
   <div class="grid-x grid-padding-x grid-padding-y padding-vertical-3 align-center align-middle">
     <div class="small-11 medium-10 large-9 cell text-center">
       {{block.copy}}
@@ -80,7 +80,7 @@
       <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
         <div class="grid-x grid-padding-x grid-padding-y">
           <ul class="menu align-center">
-            {% for collaborator in entry.collaborators  %}
+            {% for collaborator in entry.collaborators.all()  %}
             <li><a href="{{ collaborator.url }}">{{ collaborator.title }}</a></li>
             {% endfor %}
           </ul>
