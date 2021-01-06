@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2514012972c2935ab94f000a46f4fb1c",
+    "content-hash": "6af6ae9c5f4fad3f7bf22f1369e56e0b",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -675,65 +675,6 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
             "time": "2020-12-17T12:04:00+00:00"
-        },
-        {
-            "name": "craftcms/feed-me",
-            "version": "4.3.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/feed-me/zipball/e391a45f028b9523d028806cf9b2ea00288b3d82",
-                "reference": "e391a45f028b9523d028806cf9b2ea00288b3d82",
-                "shasum": ""
-            },
-            "require": {
-                "cakephp/utility": "^3.3.12",
-                "craftcms/cms": "^3.5.0",
-                "jakeasmith/http_build_url": "^1.0",
-                "league/csv": "^8.2 || ^9.0",
-                "nesbot/carbon": "^1.22 || ^2.10",
-                "ralouphie/mimey": "^2.1.0",
-                "seld/jsonlint": "^1.7"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Feed Me",
-                "handle": "feed-me",
-                "documentationUrl": "https://docs.craftcms.com/feed-me/v4/"
-            },
-            "autoload": {
-                "psr-4": {
-                    "craft\\feedme\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Pixel & Tonic",
-                    "homepage": "https://pixelandtonic.com/"
-                },
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Import content from XML, RSS, CSV or JSON feeds into entries, categories, Craft Commerce products, and more.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "feed me"
-            ],
-            "support": {
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/feed-me/issues?state=open",
-                "source": "https://github.com/craftcms/feed-me",
-                "docs": "https://docs.craftcms.com/feed-me/v4/",
-                "rss": "https://github.com/craftcms/feed-me/commits/master.atom"
-            },
-            "time": "2020-12-14T22:33:11+00:00"
         },
         {
             "name": "craftcms/google-cloud",
