@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6af6ae9c5f4fad3f7bf22f1369e56e0b",
+    "content-hash": "a232502970daf679e6549534c4d945a7",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -2342,11 +2342,11 @@
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.13.0",
+            "version": "2.13.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/fb89aac1984222227f37792dd193d34829a0762f",
-                "reference": "fb89aac1984222227f37792dd193d34829a0762f",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/45d36702d09afd5d8ca01192ecd3b5afaf37126b",
+                "reference": "45d36702d09afd5d8ca01192ecd3b5afaf37126b",
                 "shasum": ""
             },
             "require": {
@@ -2386,7 +2386,7 @@
                 "feed",
                 "laminas"
             ],
-            "time": "2020-11-18T21:02:52+00:00"
+            "time": "2021-01-04T19:20:24+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -5716,11 +5716,11 @@
         },
         {
             "name": "verbb/field-manager",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/field-manager/zipball/bcc9bbc0d36daa19f8dc4dcd9b7f3369b9f12bd7",
-                "reference": "bcc9bbc0d36daa19f8dc4dcd9b7f3369b9f12bd7",
+                "url": "https://api.github.com/repos/verbb/field-manager/zipball/ebb8020a2220cd0bc28652b9cf9e4b11a293c278",
+                "reference": "ebb8020a2220cd0bc28652b9cf9e4b11a293c278",
                 "shasum": ""
             },
             "require": {
@@ -5763,7 +5763,7 @@
                 "docs": "https://github.com/verbb/field-manager",
                 "rss": "https://github.com/verbb/field-manager/commits/v2.atom"
             },
-            "time": "2020-09-28T09:06:01+00:00"
+            "time": "2021-01-05T05:16:51+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
