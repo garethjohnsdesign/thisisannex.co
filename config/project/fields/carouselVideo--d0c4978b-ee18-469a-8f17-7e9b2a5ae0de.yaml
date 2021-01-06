@@ -1,12 +1,12 @@
 contentColumnType: string(255)
 fieldGroup: 04b3b4bb-5a04-4d55-a1fc-39e4312e4e96
 handle: carouselVideo
-instructions: ''
+instructions: 'High def (mp4, 1280x720) from Vimeo video file links'
 name: 'Carousel Video'
 searchable: false
 settings:
   maxLength: '255'
-  placeholder: ''
+  placeholder: 'https://player.vimeo.com/external/495569237.hd.mp4?s=05fffd2b177c3735c5c943102c9da23c538ed673&profile_id=174'
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Url

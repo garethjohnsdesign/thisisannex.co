@@ -69,7 +69,7 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 50
+            width: 100
         name: Team
         sortOrder: 3
       -

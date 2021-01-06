@@ -1,4 +1,4 @@
-enableVersioning: false
+enableVersioning: true
 handle: projects
 name: Projects
 propagationMethod: all

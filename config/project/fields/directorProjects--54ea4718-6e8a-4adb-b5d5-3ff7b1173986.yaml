@@ -8,8 +8,8 @@ settings:
   allowSelfRelations: false
   limit: ''
   localizeRelations: false
-  selectionLabel: ''
-  showSiteMenu: false
+  selectionLabel: 'Add a project'
+  showSiteMenu: true
   source: null
   sources:
     - 'section:32174234-e8c3-40d4-9725-77ff2bd2366a'

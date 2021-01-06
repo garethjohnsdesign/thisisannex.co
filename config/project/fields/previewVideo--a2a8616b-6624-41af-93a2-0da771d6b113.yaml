@@ -1,17 +1,12 @@
-contentColumnType: text
+contentColumnType: string(255)
 fieldGroup: dfe9b0d4-736b-4fbd-a584-88932d8d56a9
 handle: previewVideo
-instructions: ''
+instructions: 'Standard def (mp4, 960x540) from Vimeo video file links'
 name: 'Preview Video'
 searchable: true
 settings:
-  byteLimit: null
-  charLimit: null
-  code: ''
-  columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  maxLength: '255'
+  placeholder: 'https://player.vimeo.com/external/495569237.sd.mp4?s=c6b8ce559e8cda16630c6caa48ca545c13b287bd&profile_id=165'
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\PlainText
+type: craft\fields\Url

@@ -36,15 +36,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: cc7a7777-17c5-45ef-829d-9b277cb85134
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 4fea65b6-ace0-410c-b9b0-006dfb431f65
             instructions: null
             label: null
@@ -62,7 +53,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Tab 1'
+        name: Contact
         sortOrder: 1
       -
         elements:
