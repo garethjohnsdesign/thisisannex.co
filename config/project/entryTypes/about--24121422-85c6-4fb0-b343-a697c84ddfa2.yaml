@@ -49,6 +49,32 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: 69520350-8290-4936-96fb-3e923b4f3708
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Collaborators
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: c6a6830e-daad-4ac0-b66c-2f7628175116
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Team
+        sortOrder: 3
+      -
+        elements:
+          -
             fieldUid: ca761e7e-5390-4579-978a-bb6f7a552e10
             instructions: null
             label: null
@@ -67,7 +93,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: Clients
-        sortOrder: 2
+        sortOrder: 4
       -
         elements:
           -
@@ -98,55 +124,7 @@ fieldLayouts:
             warning: null
             width: 100
         name: SEO
-        sortOrder: 3
-      -
-        elements:
-          -
-            fieldUid: dfb8e5ab-3e5c-4f73-9c46-93aa958fdff3
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: af242e8f-8a13-4b63-86e6-1520c7607635
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Recognition
-        sortOrder: 4
-      -
-        elements:
-          -
-            fieldUid: c6a6830e-daad-4ac0-b66c-2f7628175116
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Team
         sortOrder: 5
-      -
-        elements:
-          -
-            fieldUid: 69520350-8290-4936-96fb-3e923b4f3708
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: Collaborators
-        sortOrder: 6
 handle: about
 hasTitleField: false
 name: About
