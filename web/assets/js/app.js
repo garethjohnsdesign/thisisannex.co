@@ -94,8 +94,6 @@ $(function() {
     video.load();
     if (index === 0) {
        video.play()
-       window.FIRST = video;
-       console.log(">>>>>", video.currentTime)
     }
   }  
 
