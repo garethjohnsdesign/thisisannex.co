@@ -139,9 +139,10 @@ const swiper = new Swiper();
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
  autoplay: {
-    delay: 4500,
+    delay: 3000,
     disableOnInteraction: false
   },
+  speed: 600,
  effect: 'fade',
  fadeEffect: {
     crossFade: true

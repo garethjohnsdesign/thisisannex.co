@@ -21,7 +21,7 @@
 {% set block = entry.hero.one() %}
 {% if block %}
 {% if block.image |length %}
-<div class="hero black-background-color">
+<div class="hero black-background-color video-group">
 {% set image = block.image.one() %}
 <div class="image--hero align-center-middle" {% if not block.video %}data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}"{% endif %} data-aos="fade-in">
   
