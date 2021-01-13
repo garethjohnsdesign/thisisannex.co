@@ -37,66 +37,78 @@ $(function() {
     $("video.video--background").attr("playsinline", "")
   }
 
-  $("video.video--background source").each(function(i) {
+// TODO Target the videos outside of the slider
+   $(".video-group video.video--background source").each(function(i) {
     var sourceFile = $(this).attr("data-src");
     $(this).attr("src", sourceFile);
     var video = this.parentElement;
-
       setTimeout(function () {
         if (!video.__played) {
          video.load()
         }
       }, 2000)
   });
-  handleVideoPlay(mySwiper)
+  //handleVideoPlay(mySwiper)*/
 });
 
 
 $(function() {
 
-  const $videos = $("video.video--background source")
+  const $videos = $(".swiper-container video.video--background")
 
 
-  const index = 0
-  const loadOneByOne = () => {
-    var $video = $videos.eq(index)
-    var sourceFile = $video.attr("data-src");
-    $video.attr("src", sourceFile);
-    var video = $video.get(0).parentElement;
-    video.onload = function () {
-      ++index;
-      loadOneByOne()
+  let $currentVideo = null
+  const detectCurrentVideo = () => {
+    let $newVideo = $(".swiper-slide-active video")
+    if (!$newVideo.length || $newVideo.is($currentVideo)) {
+      return 
     }
+    $currentVideo = $newVideo
+    $currentVideo.get(0).currentTime = 0
+  }
+  setInterval(() => {
+    detectCurrentVideo()
+  }, 100)
+
+
+
+  const loadOneByOne = index => {
+    var $video = $videos.eq(index)
+    if (!$video.length) {
+      return;
+    }
+    var $source = $("source", $video)
+    
+    var sourceFile = $source.attr("data-src");
+    $source.attr("src", sourceFile);
+
+    var video = $video.get(0)
+    video.addEventListener('loadeddata', function() {
+       video.currentTime = 0
+       loadOneByOne(index + 1)
+       if (index === 0) {
+         mySwiper.autoplay.start()
+       }
+    }, false);
+
     video.load();
     if (index === 0) {
        video.play()
+       window.FIRST = video;
+       console.log(">>>>>", video.currentTime)
     }
   }  
 
-  loadOneByOne()
-});
-
-// 3. Loading
-// ----------
+  loadOneByOne(0)
 
 
-tippy('[data-tippy-content]', {
-  placement: 'bottom',
-  followCursor: true,
-  theme: 'custom',
-  flip: false,
-  plugins: [followCursor]
-})
 
-// 3. Navigation Background
-// -------------
 
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $("nav");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
+
+
+
+
+
 
 // 5. Carousel
 // -----------
@@ -118,6 +130,13 @@ var progressBar = document.querySelector('.swiper-hero-progress');
 // configure Swiper to use modules
 Swiper.use([Navigation, Pagination, EffectFade, Keyboard, Autoplay]);
 
+
+
+///     0  1   2   3   4  5   6
+// time ----------------------------->
+//      |  *---------------->
+//                          |
+//             
 const swiper = new Swiper();
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
@@ -149,16 +168,33 @@ var mySwiper = new Swiper('.swiper-container', {
   },
   on: {
     slideChange: function() {
-          var swiper = this;
+      var swiper = this;
       var defaultSlideDelay = swiper.params.autoplay.delay;
       var currentIndex = swiper.realIndex + 1;
       var currentSlide = swiper.slides[currentIndex];
       var currentSlideDelay = currentSlide.getAttribute('data-swiper-autoplay') || defaultSlideDelay;
-      
-      updateSwiperProgressBar(progressBar, currentSlideDelay);
+
+      detectCurrentVideo()
+
+
+      /*
+      console.log(">>>>>>>>>")
+      var $video = $("video", currentSlide)
+      if ($video.length) {
+        $video.get(0).currentTime = 0
+        console.log(">>> src: ", $(".serif-display.h1", currentSlide).text(), $video.attr("src"))
+      }
+      console.log("!! > ", $video.get(0) === window.FIRST)
+      console.log("PREV VIDEO>",  $(".serif-display.h1", swiper.slides[swiper.realIndex]).text(), $("video", swiper.slides[swiper.realIndex]).get(0).currentTime)
+console.log(">>>>>>>>>")
+*/
+
+      //console.log(($(".swiper-slide-active video").get(0)||{}).currentTime)
+      //updateSwiperProgressBar(progressBar, currentSlideDelay);
     }
   }
 })
+mySwiper.autoplay.stop()
 
 function updateSwiperProgressBar(bar, slideDelay) {
 
@@ -220,13 +256,14 @@ var mySwiper = new swiper('.swiper-container', {
 var currentPlayingVideo = null
 var handleVideoPlay = function (slider) {
 
-  var $cSlide = slider.slides[slider.activeIndex] //$("[data-swiper-slide-index='" + slider.activeIndex + "']")
+return;
+  var $cSlide = slider.slides[slider.realIndex] //$("[data-swiper-slide-index='" + slider.activeIndex + "']")
   var $video = $("video", $cSlide)
   
   if ($video.length) {
     if (currentPlayingVideo) {
       currentPlayingVideo.currentTime = 0
-      currentPlayingVideo.pause()
+      //currentPlayingVideo.pause()
     }
     currentPlayingVideo = $video.get(0)
     currentPlayingVideo.play();
@@ -235,6 +272,32 @@ var handleVideoPlay = function (slider) {
 }
 mySwiper.on("slideChange", handleVideoPlay)
 mySwiper.on("init", handleVideoPlay)
+
+
+
+});
+
+// 3. Loading
+// ----------
+
+
+tippy('[data-tippy-content]', {
+  placement: 'bottom',
+  followCursor: true,
+  theme: 'custom',
+  flip: false,
+  plugins: [followCursor]
+})
+
+// 3. Navigation Background
+// -------------
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
 
 // 4. Plyr
 // ----------

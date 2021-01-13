@@ -46,3 +46,6 @@ adobe.com
 
 Slack - Emojis and GIFs
 slack.com
+
+Standards: HTML5, CSS3
+Components: Craft CMS 3, Yii2, PHP, JavaScript, SEOmatic, Tailwind, AlpineJS, Google Cloud, Imgix, Laravel Mix, LazySizes, JS Cookie

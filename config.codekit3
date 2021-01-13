@@ -129,22 +129,6 @@
 		"oAP": "/config/project/entryTypes/home--988e0807-e76b-4064-8f2f-905c8828097c.yaml",
 		"oF": 0
 		},
-	"/config/project/entryTypes/notes--dfab18df-1b83-4193-9dd1-67eb5cc7ff83.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/notes--dfab18df-1b83-4193-9dd1-67eb5cc7ff83.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/press--5c534aa3-6d92-42ec-8429-26ede5eab92b.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/press--5c534aa3-6d92-42ec-8429-26ede5eab92b.yaml",
-		"oF": 0
-		},
 	"/config/project/entryTypes/privacyPolicy--c900038a-ee1d-4ba1-afc1-e44173a44418.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -167,14 +151,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/entryTypes/projects--ea6db327-fa3f-4b4b-880b-12d3356328aa.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/series--7e643ca3-1917-41b3-9efb-71e42fff79b3.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/series--7e643ca3-1917-41b3-9efb-71e42fff79b3.yaml",
 		"oF": 0
 		},
 	"/config/project/entryTypes/terms--b90c1a49-ccce-4075-8492-a2c3ee7419ec.yaml": {
@@ -401,14 +377,6 @@
 		"oAP": "/config/project/fields/copy--cc7a7777-17c5-45ef-829d-9b277cb85134.yaml",
 		"oF": 0
 		},
-	"/config/project/fields/detail--a217b31b-0447-45c7-b27f-2a37ed6bf1cf.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/detail--a217b31b-0447-45c7-b27f-2a37ed6bf1cf.yaml",
-		"oF": 0
-		},
 	"/config/project/fields/director--b590bffb-b895-4106-ad8a-5aef5a0624aa.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -577,14 +545,6 @@
 		"oAP": "/config/project/fields/shortAddress--fb50c747-d951-4667-8094-78a8c3eb8d23.yaml",
 		"oF": 0
 		},
-	"/config/project/fields/simpleCopy--466c1699-649f-4c4f-bdf1-24d97dcda1ce.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/simpleCopy--466c1699-649f-4c4f-bdf1-24d97dcda1ce.yaml",
-		"oF": 0
-		},
 	"/config/project/fields/socials--177d26d8-196e-40fa-80c8-8dc29f7a4139.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -663,14 +623,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/matrixBlockTypes/contact--7c8fc680-6aaf-4c12-aa1e-800102456830.yaml",
-		"oF": 0
-		},
-	"/config/project/matrixBlockTypes/detail--eca191f4-90ee-49b4-900f-c24192b1d1d3.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/matrixBlockTypes/detail--eca191f4-90ee-49b4-900f-c24192b1d1d3.yaml",
 		"oF": 0
 		},
 	"/config/project/matrixBlockTypes/facebook--78f28cf7-5a64-4086-bf54-50021e0373af.yaml": {
@@ -791,22 +743,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/sections/home--8ae5cd1b-a7ec-4968-94f8-e41aec2b241d.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/notes--fafd081a-fdeb-4537-94ea-90f861360a94.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/notes--fafd081a-fdeb-4537-94ea-90f861360a94.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/press--0eadb8fa-9134-426a-bc23-c8aae901d86e.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/press--0eadb8fa-9134-426a-bc23-c8aae901d86e.yaml",
 		"oF": 0
 		},
 	"/config/project/sections/privacyPolicy--05857c3a-0daf-412c-a320-780824b26ff5.yaml": {

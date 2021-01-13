@@ -1,6 +1,6 @@
 assets:
   tempVolumeUid: 244f7440-a428-4998-8c23-00991784b369
-dateModified: 1609957406
+dateModified: 1610371950
 email:
   fromEmail: info@garethjohnsdesign.com
   fromName: 'Aoife McArdle'
@@ -24,7 +24,7 @@ plugins:
     schemaVersion: 1.0.0
   field-manager:
     edition: standard
-    enabled: false
+    enabled: true
     schemaVersion: 1.0.0
   google-cloud:
     edition: standard

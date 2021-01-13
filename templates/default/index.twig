@@ -10,7 +10,7 @@
 {% set seoDescription = entry.seoDescription %}
 {% endif %}
 
-{% set carousel = entry.carousel.orderBy('RAND()').all() %}
+{% set carousel = entry.carousel.all() %}
 
 {% extends "default/_layouts/site" %}
 
@@ -65,7 +65,7 @@
         </div>
 
         {% if project.previewVideo|length %}
-          <video autoplay loop muted class="video" poster="">
+          <video autoplay muted class="video" poster="">
             <source data-src="{{ project.previewVideo }}" type="video/mp4" data-aos="fade-in">
           </video>        
         {% endif %}
