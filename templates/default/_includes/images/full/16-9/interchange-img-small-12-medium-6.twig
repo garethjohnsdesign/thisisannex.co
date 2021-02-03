@@ -1,5 +1,13 @@
+{% if project.overrideImage|length  %}
+[{{craft.imager.transformImage(overrideImage, { width: (craft.app.config.general.breakpoints.small / 1), dpr: 1, ratio: 16/9, position: overrideImage.getFocalPoint() }).url}}, small]
+{% else %}
 [{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.small / 1), dpr: 1, ratio: 16/9, position: image.getFocalPoint() }).url}}, small]
+{% endif %}
+{% if project.overrideImage|length  %}
+[{{craft.imager.transformImage(overrideImage, { width: (craft.app.config.general.breakpoints.small / 1), dpr: 2, ratio: 16/9, position: overrideImage.getFocalPoint() }).url}}, retina],
+{% else %}
 [{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.small / 1), dpr: 2, ratio: 16/9, position: image.getFocalPoint() }).url}}, retina],
+{% endif %}
 [{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.medium / 2), dpr: 1, ratio: 16/9, position: image.getFocalPoint() }).url}}, medium],
 [{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.medium / 2), dpr: 2, ratio: 16/9, position: image.getFocalPoint() }).url}}, medium-retina],
 [{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.large / 2), dpr: 1, ratio: 16/9, position: image.getFocalPoint() }).url}}, large],

@@ -43,11 +43,25 @@
 <div class="small-12 medium-10 large-10 xlarge-10 cell">
 
 {% if entry.images | length %}
+{% for matrixBlock in entry.images.all() %}
 <div class="grid-x grid-padding-x grid-padding-y align-center">
-  <div class="small-12 cell text-center">
-    <h1>Test</h1>
-  </div>
+  {% for image in matrixBlock.images.all() %}
+
+<div class="small-12 medium-10 large-10 xlarge-10 cell">
+{% switch image.aspectRatio %}
+{% case "original" %}
+<img data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-12" %}">
+{% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %}
+{% case "1-1" or "5-4" or "5-7" or "6-4" or "7-5" or "16-9" or "3-4" %}
+<img data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}">
+{% default %}
+<img class="max-viewheight-70" data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}">
+{% endswitch %}   
 </div>
+
+  {% endfor %}
+</div>
+{% endfor %}
 {% endif %}
 
 
