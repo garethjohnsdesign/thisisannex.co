@@ -400,6 +400,6 @@ const swup = new Swup( options );
 // -----------
 init();
 
-swup.on( 'contentReplaced', init );
+swup.on('contentReplaced', init);
 
 } );
