@@ -1,13 +1,13 @@
 enableVersioning: true
-handle: directors
-name: Directors
+handle: talent
+name: Talent
 propagationMethod: all
 siteSettings:
   8a2043ba-0ab6-482c-bb78-9c06b90e1891:
     enabledByDefault: true
     hasUrls: true
-    template: directors/director
-    uriFormat: 'directors/{slug}'
+    template: talent/talent
+    uriFormat: 'talent/{slug}'
 structure:
   maxLevels: null
   uid: 1d749514-50b0-4aba-ab00-d77af1f7dece
