@@ -2520,14 +2520,6 @@
 		"oAP": "/templates/default/projects/_types/default.twig",
 		"oF": 0
 		},
-	"/templates/default/projects/_types/series.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/default/projects/_types/series.twig",
-		"oF": 0
-		},
 	"/templates/default/talent/index.twig": {
 		"cB": 0,
 		"ft": 8192,
