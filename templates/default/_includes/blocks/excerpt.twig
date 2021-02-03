@@ -18,7 +18,7 @@
 
     </div>
   </div>
-  <div class="margin-top-1 text-uppercase text-center small black" data-aos="fade-in" data-aos-delay="150">{{ project.title }} — {{ project.client }}</div>
+  <div class="margin-top-1 text-uppercase text-center small black" data-aos="fade-in" data-aos-delay="150">{{ project.title }}{% if project.client| length %} — {{project.client}}{% endif %}</div>
   {% if project.director|length %}
   {% set director = project.director.one() %}
   <div class="margin-top-0 text-uppercase text-center small dark-gray" data-aos="fade-in" data-aos-delay="200">{{ director.title }}</div>
