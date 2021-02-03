@@ -129,6 +129,14 @@
 		"oAP": "/config/project/entryTypes/home--988e0807-e76b-4064-8f2f-905c8828097c.yaml",
 		"oF": 0
 		},
+	"/config/project/entryTypes/motion--ea6db327-fa3f-4b4b-880b-12d3356328aa.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/motion--ea6db327-fa3f-4b4b-880b-12d3356328aa.yaml",
+		"oF": 0
+		},
 	"/config/project/entryTypes/press--5c534aa3-6d92-42ec-8429-26ede5eab92b.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -153,20 +161,12 @@
 		"oAP": "/config/project/entryTypes/producers--46128a99-13e8-4851-8cd6-aed9bed72a5b.yaml",
 		"oF": 0
 		},
-	"/config/project/entryTypes/projects--ea6db327-fa3f-4b4b-880b-12d3356328aa.yaml": {
+	"/config/project/entryTypes/stills--7e643ca3-1917-41b3-9efb-71e42fff79b3.yaml": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/config/project/entryTypes/projects--ea6db327-fa3f-4b4b-880b-12d3356328aa.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/series--7e643ca3-1917-41b3-9efb-71e42fff79b3.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/series--7e643ca3-1917-41b3-9efb-71e42fff79b3.yaml",
+		"oAP": "/config/project/entryTypes/stills--7e643ca3-1917-41b3-9efb-71e42fff79b3.yaml",
 		"oF": 0
 		},
 	"/config/project/entryTypes/terms--b90c1a49-ccce-4075-8492-a2c3ee7419ec.yaml": {
@@ -2518,6 +2518,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/default/projects/_types/default.twig",
+		"oF": 0
+		},
+	"/templates/default/projects/_types/motion.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/projects/_types/motion.twig",
+		"oF": 0
+		},
+	"/templates/default/projects/_types/stills.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/projects/_types/stills.twig",
 		"oF": 0
 		},
 	"/templates/default/talent/index.twig": {

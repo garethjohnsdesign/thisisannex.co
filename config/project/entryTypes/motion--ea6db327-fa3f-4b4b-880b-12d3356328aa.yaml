@@ -140,9 +140,9 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: projects
+handle: motion
 hasTitleField: true
-name: Projects
+name: Motion
 section: 32174234-e8c3-40d4-9725-77ff2bd2366a
 sortOrder: 1
 titleFormat: null

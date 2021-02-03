@@ -42,27 +42,10 @@
 <!-- Center -->
 <div class="small-12 medium-10 large-10 xlarge-10 cell">
 
-{% if entry.video | length %}
+{% if entry.images | length %}
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 cell text-center">
-  <div class="plyr-wrapper">
-      <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ entry.video }}"></div>
-      <div class="overlay">
-      <div class="grid-y align-center height-100">
-        <div class="shrink cell text-center white">
-        <h1 class="white">{{entry.title}}</h1>
-        <div class="text-uppercase letter-spacing--loose margin-bottom-1">{{entry.client}}</div>
-        </div>
-      </div>
-      </div>
-  </div>
-  </div>
-</div>
-{% elseif entry.image | length %}
-<div class="grid-x grid-padding-x grid-padding-y align-center">
-  <div class="small-12 cell text-center">
-  {% set image = entry.image.one() %}
-  <div class="image--16-9" data-interchange="{% if image | length %}{% include "_includes/images/full/16-9/interchange-img-small-12-medium-6" %}{% endif %}"></div>
+    <h1>Test</h1>
   </div>
 </div>
 {% endif %}
@@ -72,7 +55,7 @@
 <div class="grid-x grid-padding-x grid-padding-y align-center">
   <div class="small-12 medium-12 cell text-center small">
   
-  <div class="text-uppercase margin-bottom-1">{{ entry.title }} — {{entry.client}}</div>
+  <div class="text-uppercase margin-bottom-1">{{ entry.title }}{% if entry.client| length %} — {{entry.client}}{% endif %}</div>
 
   {% if entry.director|length %}
   {% set director = entry.director.one() %}
