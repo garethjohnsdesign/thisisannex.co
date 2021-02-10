@@ -384,10 +384,10 @@ h1, .h1 {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
   @include breakpoint(small only) {
-    height: 60vh;
-    height: calc(var(--vh, 1vh) * 60);
-    min-height: 60vh;
-    min-height: calc(var(--vh, 1vh) * 60);
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
+    min-height: 50vh;
+    min-height: calc(var(--vh, 1vh) * 50);
   }
 }
 
