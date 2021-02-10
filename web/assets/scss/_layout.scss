@@ -374,9 +374,8 @@ h1, .h1 {
 
 .image--slide {
   @include aspect-ratio (2.4, 1);
-  background-size: cover; 
-  background-position: 50%;
   overflow: hidden;
+  position: relative;
 }
 
 .home .image--slide {
@@ -384,8 +383,12 @@ h1, .h1 {
   height: calc(var(--vh, 1vh) * 100);
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
-  background-size: cover; 
-  background-position: 50%;
+  @include breakpoint(small only) {
+    height: 60vh;
+    height: calc(var(--vh, 1vh) * 60);
+    min-height: 60vh;
+    min-height: calc(var(--vh, 1vh) * 60);
+  }
 }
 
 
@@ -581,44 +584,41 @@ overflow: hidden;
 }
 
 .video--background {
-  min-width: 100%; 
-  min-height: 100%;
-//   max-width: 100%;
-  width: auto;
+  position: absolute;
+  width: 100%;
   height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  object-fit: cover;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 
-.swiper-container .video--background {
-  min-width: 100%; 
-  min-height: 100%;
-//   max-width: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: -1;
-}
+// .swiper-container .video--background {
+//   min-width: 100%; 
+//   min-height: 100%;
+// //   max-width: 100%;
+//   width: auto;
+//   height: auto;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%,-50%);
+//   z-index: -1;
+// }
 
-.about .video--background {
-  min-width: 100%; 
-  min-height: 100%;
-//   max-width: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: -1;
-  overflow: hidden;
-}
+// .about .video--background {
+//   min-width: 100%; 
+//   min-height: 100%;
+// //   max-width: 100%;
+//   width: auto;
+//   height: auto;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%,-50%);
+//   z-index: -1;
+//   overflow: hidden;
+// }
 
 .hero {
   overflow: hidden;

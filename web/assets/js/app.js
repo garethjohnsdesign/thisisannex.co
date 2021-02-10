@@ -304,6 +304,7 @@ $(function () {
 const players = Plyr.setup('.js-player', {
   ratio: '16:9',
   controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen']
+
 });
 
 
