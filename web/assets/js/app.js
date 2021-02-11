@@ -139,7 +139,7 @@ const swiper = new Swiper();
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
  autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false
   },
   speed: 600,
