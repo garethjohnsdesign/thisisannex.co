@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f712cb94ad6914b7f19348f4dce99cf",
+    "content-hash": "aa7869e282762e951c2dfabfa381a6cc",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -6565,60 +6565,6 @@
                 }
             ],
             "time": "2021-03-10T10:05:55+00:00"
-        },
-        {
-            "name": "venveo/craft-bulkedit",
-            "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/venveo/craft-bulkedit.git",
-                "reference": "5f74892d123a9ac0e2b2bfecce2ee0a2414e74d0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/venveo/craft-bulkedit/zipball/5f74892d123a9ac0e2b2bfecce2ee0a2414e74d0",
-                "reference": "5f74892d123a9ac0e2b2bfecce2ee0a2414e74d0",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.2.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Bulk Edit",
-                "handle": "venveo-bulk-edit",
-                "changelogUrl": "https://raw.githubusercontent.com/venveo/craft-bulkedit/master/CHANGELOG.md",
-                "class": "venveo\\bulkedit\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "venveo\\bulkedit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Venveo",
-                    "homepage": "https://venveo.com"
-                }
-            ],
-            "description": "Bulk edit Craft CMS element fields",
-            "keywords": [
-                "Craft",
-                "bulk edit",
-                "cms",
-                "craft-plugin",
-                "craftcms"
-            ],
-            "support": {
-                "docs": "https://github.com/venveo/craft-bulkedit/blob/master/README.md",
-                "issues": "https://github.com/venveo/craft-bulkedit/issues",
-                "source": "https://github.com/venveo/craft-bulkedit/tree/master"
-            },
-            "time": "2020-07-12T18:45:03+00:00"
         },
         {
             "name": "verbb/base",

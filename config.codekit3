@@ -1555,6 +1555,17 @@
       "sC" : 1,
       "tS" : 0
     },
+    "\/node_modules\/@popperjs\/core\/lib\/utils\/math.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/node_modules\/@popperjs\/core\/lib\/utils\/min\/math-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
     "\/node_modules\/@popperjs\/core\/lib\/utils\/mergeByName.js" : {
       "bF" : 0,
       "ft" : 64,
