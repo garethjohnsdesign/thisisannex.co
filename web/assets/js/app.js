@@ -364,7 +364,7 @@ if (!Cookies.get('loading')) {
     setTimeout(function(){
      $(".loader").addClass("loaded");
      Cookies.set('loading', 'true');
-    }, 2500);
+    }, 4000);
   });
 
 } else { 
