@@ -1,0 +1,31 @@
+fieldLayouts:
+  d04da4a1-a462-461d-98d1-0f76c52c8ad5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 28783b89-1d51-4d32-8712-32508354212a # Primary Talent
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Primary Talent'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 7d4244b7-bad7-45af-9f3b-e48a1a4937e6 # Associated Talent
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Associated Talent'
+        sortOrder: 2
+handle: talent
+name: Talent

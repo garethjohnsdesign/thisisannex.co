@@ -1,0 +1,40 @@
+fieldLayouts:
+  f9c144a5-024b-4874-be40-c761c34e5e1a:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: typeOfTalent
+name: 'Type of Talent'
+siteSettings:
+  8a2043ba-0ab6-482c-bb78-9c06b90e1891:
+    hasUrls: true
+    template: null
+    uriFormat: 'type-of-talent/{slug}'
+structure:
+  maxLevels: null
+  uid: f53dceef-3415-42c0-93be-14e99e24dbbb

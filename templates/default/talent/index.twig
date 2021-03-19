@@ -1,8 +1,6 @@
 {% set bodyClass = 'directors' %}
 
-{% set directors = craft.entries
-.section('talent')
-.all() %}
+{% set directors = talent.primaryTalent.all() %}
 
 {% extends "default/_layouts/site" %}
 
