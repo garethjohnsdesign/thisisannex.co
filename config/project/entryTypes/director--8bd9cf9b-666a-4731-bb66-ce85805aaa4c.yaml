@@ -46,9 +46,9 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: directors
+handle: director
 hasTitleField: true
-name: Directors
+name: Director
 section: b7517307-0a83-443e-a91c-fcadf20ff746
 sortOrder: 1
 titleFormat: null

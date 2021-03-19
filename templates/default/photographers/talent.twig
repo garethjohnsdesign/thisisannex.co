@@ -39,38 +39,13 @@
 <!-- Content -->
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y align-center">
-    <div class="small-12 medium-10 large-8 cell padding-top-0 padding-bottom-1 text-center">
+    <div class="small-12 medium-10 large-8 cell padding-top-0 padding-bottom-0 text-center">
     <h1>{{entry.title}}</h1>
     {{entry.copy}}
     </div>
   </div>
 </div> 
 <!-- End Content -->
-
-{% if entry.type.handle == 'photographer' %}
-<!-- Carousel -->
-<div class="grid-container">
-<div class="grid-x grid-padding-x grid-padding-y align-center">
-  <div class="small-12 medium-10 large-10 cell text-center">
-
-  <div class="swiper-container swiper--stills">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper" data-aos="fade-in" data-aos-delay="100">
-          <!-- Slides -->
-          {% for image in entry.imageCarousel.all() %}
-          <div class="swiper-slide" data-caption="{{image.caption}}">
-          <div class="image--16-9 carouselimage" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-12" %}"></div>
-          <div class="swiper-pagination-test margin-top-1"></div>
-          </div>
-          {% endfor %}
-      </div>
-  </div>
-
-  </div>
-  </div>
-</div>
-<!-- End Carousel -->
-{% endif %}  
 
 <div class="grid-container video-group">
   <div class="grid-x grid-padding-x grid-padding-y margin-bottom-3 align-center">
