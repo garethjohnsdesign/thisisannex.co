@@ -80,8 +80,8 @@
       <div class="small-12 medium-10 large-8 xxlarge-8 cell text-center">
         <div class="grid-x grid-padding-x grid-padding-y">
           <ul class="menu align-center">
-            {% for collaborator in talent.associatedTalent.all() %}
-            <li><a href="{{ collaborator.url }}">{{ collaborator.title }}</a></li>
+            {% for associatedTalent in talent.associatedTalent.all() %}
+            <li><a href="{{ associatedTalent.url }}">{{ associatedTalent.title }}</a></li>
             {% endfor %}
           </ul>
         </div>

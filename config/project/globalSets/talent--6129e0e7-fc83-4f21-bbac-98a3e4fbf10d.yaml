@@ -27,5 +27,31 @@ fieldLayouts:
             width: 100
         name: 'Associated Talent'
         sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: a3a6f62e-5498-4e0f-b65f-56ac02861128 # Director Talent
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Directors
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 649d7b89-fd10-410e-b372-5c68ddfb957b # Photographer Talent
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Photographers
+        sortOrder: 4
 handle: talent
 name: Talent

@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 339d4aee-ce38-4262-8048-c7399da71ed7 # Talent
+handle: directorTalent
+instructions: ''
+name: 'Director Talent'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: 'Add a director'
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:b7517307-0a83-443e-a91c-fcadf20ff746'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries
