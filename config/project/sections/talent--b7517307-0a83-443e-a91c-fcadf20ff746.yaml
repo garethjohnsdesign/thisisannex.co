@@ -7,7 +7,7 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: talent/talent
-    uriFormat: 'talent/{slug}'
+    uriFormat: 'talent/{type}/{slug}'
 structure:
   maxLevels: null
   uid: 1d749514-50b0-4aba-ab00-d77af1f7dece

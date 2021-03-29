@@ -34,6 +34,19 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
+  4d06353e-1834-4e7c-8611-05fc0ded53a7:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: video
+    instructions: ''
+    name: Video
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   38bb7611-1cc9-4931-838a-5e58f3eb5a06:
     contentColumnType: string
     fieldGroup: null
@@ -64,19 +77,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  4d06353e-1834-4e7c-8611-05fc0ded53a7:
-    contentColumnType: string(255)
-    fieldGroup: null
-    handle: video
-    instructions: ''
-    name: Video
-    searchable: false
-    settings:
-      maxLength: '255'
-      placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Url
   c724603d-df08-4e21-a279-6a468d0e3a87:
     contentColumnType: text
     fieldGroup: null

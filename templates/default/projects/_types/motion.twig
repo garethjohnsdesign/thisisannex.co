@@ -70,31 +70,35 @@
 
 <!-- Credits -->
 <div class="grid-x grid-padding-x grid-padding-y align-center">
-  <div class="small-12 medium-12 cell text-center small">
+  <div class="small-12 medium-12 large-8 cell text-center">
   
-  <div class="text-uppercase margin-bottom-1">{{ entry.title }}{% if entry.client| length %} — {{entry.client}}{% endif %}</div>
+  <div class="text-uppercase margin-bottom-1 small">{{ entry.title }}{% if entry.client| length %} — {{entry.client}}{% endif %}</div>
 
   {% if entry.director|length %}
   {% set director = entry.director.one() %}
-  <div class="text-uppercase"><span class="dark-gray padding-right-half">Director</span> {{ director.title }}</div>
+  <div class="text-uppercase small"><span class="dark-gray padding-right-half">Director</span> {{ director.title }}</div>
   {% endif %}
 
   {% if entry.producer|length %}
   {% set producer = entry.producer.one() %}
-  <div class="text-uppercase"><span class="dark-gray padding-right-half">Producer</span> {{ producer.title }}</div>
+  <div class="text-uppercase small"><span class="dark-gray padding-right-half">Producer</span> {{ producer.title }}</div>
   {% endif %}
 
   {% if entry.agency|length %}
-  <div class="text-uppercase"><span class="dark-gray padding-right-half">Agency</span> {{ entry.agency}}</div>
+  <div class="text-uppercase small"><span class="dark-gray padding-right-half">Agency</span> {{ entry.agency}}</div>
   {% endif %}
 
   {% if entry.length|length %}
-  <div class="margin-top-1">{{ entry.length }}</div>
+  <div class="margin-top-1 small">{{ entry.length }}</div>
   {% endif %}
 
   {% if entry.director|length %}
   {% set director = entry.director.one() %}
-  <div class="margin-top-1 text-uppercase dark-gray"><a href="{{ director.url }}">More from director</a></div>
+  <div class="margin-top-1 text-uppercase dark-gray small"><a href="{{ director.url }}">More from director</a></div>
+  {% endif %}
+
+  {% if entry.copy|length %}
+  <div class="margin-top-2">{{entry.copy}}</div>
   {% endif %}
 
   </div>

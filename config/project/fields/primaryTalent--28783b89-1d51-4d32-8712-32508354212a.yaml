@@ -12,7 +12,7 @@ settings:
   showSiteMenu: false
   source: null
   sources:
-    - 'section:b7517307-0a83-443e-a91c-fcadf20ff746'
+    - 'section:b7517307-0a83-443e-a91c-fcadf20ff746' # Talent
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

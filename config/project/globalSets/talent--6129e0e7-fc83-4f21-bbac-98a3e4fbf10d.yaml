@@ -53,5 +53,27 @@ fieldLayouts:
             width: 100
         name: Photographers
         sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 96155cf9-de1d-4496-be9c-86a599d0337f # Motion Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7b85dd0d-9594-48c3-b67a-d051f8a2697c # Stills Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Wording
+        sortOrder: 5
 handle: talent
 name: Talent

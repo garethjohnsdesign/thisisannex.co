@@ -1,6 +1,7 @@
 {% set bodyClass = 'directors' %}
 
-{% set directors = talent.primaryTalent.all() %}
+{% set directors = talent.directorTalent.all() %}
+{% set photographers = talent.photographerTalent.all() %}
 
 {% extends "default/_layouts/site" %}
 
@@ -10,13 +11,26 @@
 
 {% block main %}
 <div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y margin-bottom-3 align-center">
-<div class="small-12 medium-10 large-10 xlarge-10 cell text-center">
-  {% for director in directors %}
+  {# Directors #}
+  <div class="grid-x grid-padding-x grid-padding-y margin-bottom-1 align-center">
+    <div class="small-12 medium-10 large-10 xlarge-10 cell padding-bottom-0 text-center">
+    <div class="margin-vertical-1 text-uppercase dark-gray small">{{talent.motionText}}</div>
+    {% for director in directors %}
     <div data-aos="fade-in"><a href="{{director.url}}" class="h1">{{director.title}}</a></div>
-  {% endfor %}
-</div>
+    {% endfor %}
+    </div>
   </div>
+  {# End Directors #}
+  {# Photographers #}
+  <div class="grid-x grid-padding-x grid-padding-y margin-bottom-3 align-center">
+    <div class="small-12 medium-10 large-10 xlarge-10 cell text-center">
+    <div class="margin-vertical-1 text-uppercase dark-gray small">{{talent.stillsText}}</div>
+    {% for photographer in photographers %}
+    <div data-aos="fade-in"><a href="{{photographer.url}}" class="h1">{{photographer.title}}</a></div>
+    {% endfor %}
+    </div>
+  </div>
+  {# End Photographers #}
 </div>
 {% endblock %}
 

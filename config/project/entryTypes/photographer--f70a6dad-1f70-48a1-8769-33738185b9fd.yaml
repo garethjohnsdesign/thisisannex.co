@@ -44,21 +44,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-          -
-            fieldUid: 54ea4718-6e8a-4adb-b5d5-3ff7b1173986
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: Content
         sortOrder: 1
 handle: photographer
 hasTitleField: true
 name: Photographer
-section: b7517307-0a83-443e-a91c-fcadf20ff746
+section: b7517307-0a83-443e-a91c-fcadf20ff746 # Talent
 sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null

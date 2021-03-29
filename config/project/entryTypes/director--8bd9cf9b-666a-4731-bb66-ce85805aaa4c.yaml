@@ -49,7 +49,7 @@ fieldLayouts:
 handle: director
 hasTitleField: true
 name: Director
-section: b7517307-0a83-443e-a91c-fcadf20ff746
+section: b7517307-0a83-443e-a91c-fcadf20ff746 # Talent
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

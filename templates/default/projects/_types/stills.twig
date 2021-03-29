@@ -73,7 +73,7 @@
 
   {% if entry.director|length %}
   {% set director = entry.director.one() %}
-  <div class="text-uppercase"><span class="dark-gray padding-right-half">Director</span> {{ director.title }}</div>
+  <div class="text-uppercase"><span class="dark-gray padding-right-half">Photographer</span> {{ director.title }}</div>
   {% endif %}
 
   {% if entry.producer|length %}
@@ -91,7 +91,7 @@
 
   {% if entry.director|length %}
   {% set director = entry.director.one() %}
-  <div class="margin-top-1 text-uppercase dark-gray"><a href="{{ director.url }}">More from director</a></div>
+  <div class="margin-top-1 text-uppercase dark-gray"><a href="{{ director.url }}">More from photographer</a></div>
   {% endif %}
 
   </div>
